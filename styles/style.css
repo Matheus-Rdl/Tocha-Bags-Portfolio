@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     --background-header: #a89c9c;
@@ -11,10 +12,14 @@
     --orange: #ecb54e;
 
     --font-style: "Satisfy", cursive;
+    --font-text: "Montserrat", sans-serif;;
     --font-nav: 1.2rem;
+
+    --rotate-footer-background: -70deg;
 }
 
 body{
+    font-family: var(--font-text);
     background-color: var(--white);
 }
 
@@ -26,6 +31,7 @@ header{
     position: relative;
     z-index: -1;
     box-shadow: 0 1px 3px;
+    overflow: hidden;
 }
 
 .header-triangle1{
@@ -47,17 +53,6 @@ header{
     z-index: -2;
 }
 
-#img1{
-    position: absolute;
-    width: 330px;
-    height: auto;
-    right: 0;
-    bottom: 0;
-    opacity: 1;
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out; 
-    z-index: -3;
-}
-
 .header-triangle3{
     position: absolute;
     width: 60px;
@@ -77,7 +72,20 @@ header{
     z-index: -5;
     opacity: 0.8;
 }
-
+.header-imgs{
+    width: 100%;
+    height: auto;
+}
+#img1{
+    position: absolute;
+    width: 330px;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; 
+    z-index: -3;
+}
 #img2{
     position: absolute;
     width: 300px;
@@ -186,3 +194,85 @@ section:not(.principal section, .menu-nav){
 .work-text{
     margin: 0 15%;
 }
+
+footer{
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 50px;
+    background-color: var(--brown);
+    background: linear-gradient(to left, rgba(86, 62, 60, 1), rgba(86, 62, 60, 0.8));
+    overflow: hidden;
+    position: relative;
+}
+
+.footer-logo{
+    width: 80px;
+    height: auto;
+    opacity: 0.8;
+    margin: 10px 0 0 10px;
+
+}
+
+
+#f-r-yellow1{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 135px;
+    width: 250px;
+    height: 50px;
+    background-color: var(--yellow1);
+    rotate: var(--rotate-footer-background);
+}
+#f-r-yellow2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 25px;
+    background-color: var(--yellow1);
+    rotate: var(--rotate-footer-background);
+}
+#f-r-green1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 275px;
+    width: 100px;
+    height: 50px;
+    background-color: var(--green);
+    rotate: var(--rotate-footer-background);
+}
+#f-r-green2{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 40px;
+    width: 250px;
+    height: 25px;
+    background-color: var(--green);
+    rotate: var(--rotate-footer-background);
+}
+#f-r-orange1{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    margin-right: -80px;
+    width: 250px;
+    height: 100px;
+    background-color: var(--orange);
+    rotate: var(--rotate-footer-background);
+}
+#f-r-orange2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 170px;
+    width: 150px;
+    height: 50px;
+    background-color: var(--orange);
+    rotate: var(--rotate-footer-background);
+}
+
+
+
