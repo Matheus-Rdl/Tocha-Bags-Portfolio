@@ -209,6 +209,8 @@ section:not(.principal section, .menu-nav){
     flex-direction: column;
     width: 50%;
     height: auto;
+    
+    background-color: #a89c9c;
 }
 
 .div1-work{
@@ -375,6 +377,113 @@ footer{
     }
     #work-img:nth-child(2), #work-img:nth-child(1){
         margin: 0;
+    }
+}
+
+@media (max-width: 750px){
+
+    .work-content{
+        flex-direction: column;
+    }
+    .work-imgs{
+        justify-content: center;
+        width: 100%;
+        height: 260px;
+    }
+    .div1-work, .div2-work{
+        flex-direction: row;
+    }  
+    .work-text{
+        width: 90%;
+    }
+
+    /*
+    .work-text, .work-imgs{
+        width: 90%;
+    }
+    .work-imgs{
+        height: 260px;
+        display: flex;
+        align-items: center;
+        margin: 0 5%;
+    }
+    .div1-work, .div2-work{
+        flex-direction: row;
+    }
+    */
+
+    .bills-content{
+        flex-direction: column;
+        margin: 0;
+        gap: 30px
+    }
+    .bills img{
+        width: 30%;
+        height: 30%;
+    }
+    .bills-budget, .bills-send{
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 20px;
+    }  
+    .bills-deadlines{
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+    .bills-text{
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    #work-img{
+        width: 120px;
+        height: 120px;
+    }
+    .div1-work{
+        gap: 15px;
+    }
+    .div2-work{
+        margin-top: 60px;
+        gap: 15px;
+        padding-left: 75px;
+    }
+    #work-img:hover{
+        z-index: 2;
+        width: 135px;
+        height: 135px;
+    }
+    
+}
+
+@media (max-width: 500px){
+    .bills-budget, .bills-send,.bills-deadlines{
+        flex-direction: column;
+    }  
+    .bills img{
+        width: 175px;
+        height: 175px;
+    }
+    .bills-text{
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px){
+    .div1-work, .div2-work{
+        flex-direction: column;
+    }
+    .div2-work{
+        margin-top: 75px;
+        gap: 15px;
+        padding-left: 90px;
+    }
+    .work-imgs{
+        height: 350px;
     }
 }
 
