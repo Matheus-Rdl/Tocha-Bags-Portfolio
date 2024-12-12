@@ -254,6 +254,41 @@ section:not(.principal section, .menu-nav){
     margin-top: 30px;
 }
 
+.bills-content{
+    gap: 5%;
+    margin: 0 10%;
+    display: flex;
+    align-items: flex-start;
+}
+.bills-content strong{
+    font-weight: 600;
+}
+
+.bills img{
+    width: 20vw;
+    object-fit: cover;
+    transition: 1s;
+}
+.bills img:hover{
+    opacity: 0.6;
+}
+
+.bills-budget{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}  
+.bills-deadlines{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+.bills-send{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
 footer{
     width: 100%;
     height: 150px;
@@ -271,6 +306,7 @@ footer{
     margin: 10px 0 0 10px;
 
 }
+
 
 
 #f-r-yellow{
@@ -341,6 +377,11 @@ footer{
         margin: 0;
     }
 }
+
+
+
+
+
 
 
 
