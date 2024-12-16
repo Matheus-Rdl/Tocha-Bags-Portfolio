@@ -193,6 +193,7 @@ section:not(.principal section, .menu-nav){
     display: flex;
 }
 
+
 .work-text p{
     margin-bottom: 16px;
 }
@@ -203,20 +204,21 @@ section:not(.principal section, .menu-nav){
 .work-text strong{
     font-weight: 600;
 }
+.work-container-img{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
 .work-imgs{
+    width: auto;
+    margin: 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 50%;
     height: auto;
-    
-    background-color: #a89c9c;
 }
 
 .div1-work{
-    position: absolute;
-    top: 0;
-    width: 85%;
     display: flex;
     gap: 30px;
     justify-content: flex-start;
@@ -224,17 +226,15 @@ section:not(.principal section, .menu-nav){
 }
 
 .div2-work{
-    position: absolute;
-    margin-top: 100px;
     display: flex;
     gap: 30px;
-    padding-left: 100px;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 100px;
 }
 
 #work-img{
     width: 150px;
-    height: 150px;
+    height: 150px; 
     object-fit: cover;
     border-radius: 150px;
     border-style: solid;
@@ -248,16 +248,16 @@ section:not(.principal section, .menu-nav){
     width: 165px;
     height: 165px;
 }
-
+/*
 #work-img:nth-child(1){
     margin-top: 50px;
 }
 #work-img:nth-child(2){
     margin-top: 30px;
 }
-
+*/
 .bills-content{
-    gap: 5%;
+    gap: 8%;
     margin: 0 10%;
     display: flex;
     align-items: flex-start;
@@ -267,12 +267,19 @@ section:not(.principal section, .menu-nav){
 }
 
 .bills img{
-    width: 20vw;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 300px;
+    min-width: 150px;
     object-fit: cover;
     transition: 1s;
 }
 .bills img:hover{
     opacity: 0.6;
+}
+
+.bills-content div:not(.bills-content div div){
+    width: 28%;
 }
 
 .bills-budget{
@@ -375,8 +382,11 @@ footer{
     .div1-work, .div2-work{
         flex-direction: column;
     }
-    #work-img:nth-child(2), #work-img:nth-child(1){
-        margin: 0;
+    .div2-work{
+        margin: 100px 0 0 0;
+    }
+    .work-imgs{
+        flex-direction: row;
     }
 }
 
@@ -385,18 +395,21 @@ footer{
     .work-content{
         flex-direction: column;
     }
-    .work-imgs{
-        justify-content: center;
+    .work-container-img{
         width: 100%;
-        height: 260px;
+    }
+    .work-imgs{
+        flex-direction: column;
     }
     .div1-work, .div2-work{
         flex-direction: row;
-    }  
+    } 
+    .div2-work{
+        margin: 0 0 0 100px;
+    } 
     .work-text{
         width: 90%;
     }
-
     /*
     .work-text, .work-imgs{
         width: 90%;
@@ -415,12 +428,17 @@ footer{
     .bills-content{
         flex-direction: column;
         margin: 0;
-        gap: 30px
+        gap: 30px;
+    }
+    
+    .bills-content div:not(.bills-content div div){
+        width: 100%;
     }
     .bills img{
         width: 30%;
         height: 30%;
     }
+    
     .bills-budget, .bills-send{
         align-items: center;
         justify-content: space-around;
@@ -447,9 +465,9 @@ footer{
         gap: 15px;
     }
     .div2-work{
-        margin-top: 60px;
+        /*margin-top: 60px;*/
         gap: 15px;
-        padding-left: 75px;
+        margin-left: 70px;
     }
     #work-img:hover{
         z-index: 2;
@@ -478,12 +496,12 @@ footer{
         flex-direction: column;
     }
     .div2-work{
-        margin-top: 75px;
+        margin: 70px 0 0 0;
         gap: 15px;
-        padding-left: 90px;
     }
     .work-imgs{
-        height: 350px;
+        flex-direction: row;
+
     }
 }
 
