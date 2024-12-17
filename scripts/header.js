@@ -25,13 +25,25 @@ function mudarImagem1() {
 }
 
 function ajustarTamanhoImagem1(imagemElement1) {
-    if (imagemElement1.src.includes('img3.png')) {
-        imagemElement1.style.width = '260px';
-        imagemElement1.style.margin = '0 150px 100px 0';
-    }else{
-        imagemElement1.style.width = '300px';
-        imagemElement1.style.margin = '0 100px 150px 0';
+    const larguraTela = window.innerWidth;
+    if (larguraTela <= 800) {
+        if (imagemElement1.src.includes('img3.png')) {
+            imagemElement1.style.width = '160px';
+            imagemElement1.style.margin = '0 80px 100px 0';
+        }else{
+            imagemElement1.style.width = '200px';
+            imagemElement1.style.margin = '0 60px 135px 0';
+        }
+    } else{
+        if (imagemElement1.src.includes('img3.png')) {
+            imagemElement1.style.width = '260px';
+            imagemElement1.style.margin = '0 150px 100px 0';
+        }else{
+            imagemElement1.style.width = '300px';
+            imagemElement1.style.margin = '0 100px 150px 0';
+        }
     }
+
 }
 
 // Função para trocar de imagem
@@ -55,13 +67,24 @@ function mudarImagem2() {
 
 // Função para ajustar o tamanho da imagem
 function ajustarTamanhoImagem2(imagemElement2) {
+    const larguraTela = window.innerWidth;
     //Criado para ajustar diferentes tamanhos de imagens
-    if (imagemElement2.src.includes('img4.png')) {
-        imagemElement2.style.width = '220px';
-        imagemElement2.style.margin = '0 40px 0 0'
-    }else{
-        imagemElement2.style.width = '330px';
-        imagemElement2.style.margin = '0'
+    if (larguraTela <= 800) {
+        if (imagemElement2.src.includes('img4.png')) {
+            imagemElement2.style.width = '150px';
+            imagemElement2.style.margin = '0 15px 25px 0'
+        }else{
+            imagemElement2.style.width = '230px';
+            imagemElement2.style.margin = '0 -30px 25px 0'
+        }
+    } else {
+        if (imagemElement2.src.includes('img4.png')) {
+            imagemElement2.style.width = '220px';
+            imagemElement2.style.margin = '0 40px 0 0'
+        }else{
+            imagemElement2.style.width = '330px';
+            imagemElement2.style.margin = '0'
+        }
     }
 }
 
