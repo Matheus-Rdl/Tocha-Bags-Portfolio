@@ -204,6 +204,7 @@ header{
     height: 45px;
     width: 200%;
     border-radius: 0;
+    box-shadow: 0 0 2px;
 }
 #nav a{
     font-size: var(--font-nav);
