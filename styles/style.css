@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --background-header: #a89c9c;
+    --background-header: #c3c3c3;
     --yellow: #e5c460;
     --brown: #563e3c;
     --white:  #F2F2F2;
@@ -144,23 +144,24 @@ header{
 #menu-toggle{
     font-size: 1.5rem;
     visibility: hidden;
-    left: 0;
-    top: 0;
     width: 60px;
     height: 60px;
     border-radius: 30px;
     background-color: var(--white);
-    box-shadow: 0 2px 3px;
+    box-shadow: 0 2px 1px;
 }
 .menu-toggle{
     position: absolute;
-    margin-top: 375px;
+    margin-top: -80px;
     margin-left: 5%;
+
 
 }
 .menu-toggle-fixed{
     position: fixed;
     margin: 15px 0 0 15px;
+    top: 0;
+    left: 0;
 }
 #menu-close{
     display: none;
@@ -171,7 +172,7 @@ header{
     height: 60px;
     border-radius: 30px;
     background-color: var(--white);
-    box-shadow: 0 2px 3px;    
+    box-shadow: 0 2px 1px;    
 }
 .menu{
     margin-top: -50px;
@@ -201,7 +202,7 @@ header{
     align-items: center;
     justify-content: center;
     height: 45px;
-    width: 100%;
+    width: 200%;
     border-radius: 0;
 }
 #nav a{
@@ -290,7 +291,7 @@ section:not(.principal section, #menu){
     border-radius: 150px;
     border-style: solid;
     border-color: #000000;
-    border-width: 5px;
+    border-width: 2px;
     background-color: #F2F2F2;
     transition: 0.5s;
 }
@@ -656,7 +657,9 @@ footer{
     .nav-open{
         left: 0;
     }
-    
+    #menu-toggle:hover, #menu-close:hover{
+        background-color: var(--background-header);
+    }
 }
 
 

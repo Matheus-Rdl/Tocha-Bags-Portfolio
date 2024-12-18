@@ -5,7 +5,7 @@ window.addEventListener('scroll', function() {
     var toggle = document.getElementById('menu-toggle');
 
     // Verifica se a rolagem chegou ao topo do menu
-    if (window.scrollY >= 450) {
+    if (window.scrollY >= 450.00) {
         menu.classList.add('menu-fixed');
         menu.classList.remove('menu');
         nav.classList.add('nav-fixed');
