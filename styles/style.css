@@ -142,6 +142,7 @@ header{
     justify-content: center;
 }
 #menu-toggle{
+    font-size: 1.5rem;
     visibility: hidden;
     left: 0;
     top: 0;
@@ -150,18 +151,27 @@ header{
     border-radius: 30px;
     background-color: var(--white);
     box-shadow: 0 2px 3px;
-    z-index: 2000;
 }
 .menu-toggle{
     position: absolute;
     margin-top: 375px;
     margin-left: 5%;
-    transition: 1s ease;
 
 }
 .menu-toggle-fixed{
     position: fixed;
     margin: 15px 0 0 15px;
+}
+#menu-close{
+    display: none;
+    font-size: 1.5rem;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--white);
+    box-shadow: 0 2px 3px;    
 }
 .menu{
     margin-top: -50px;
@@ -179,7 +189,6 @@ header{
     gap: 7.5%;
     background-color: var(--white);
     box-shadow: 0 2px 5px;
-    transition: all 0.5s ease; 
 }
 .nav{
     align-items: center;
@@ -614,6 +623,9 @@ footer{
     .work-imgs{
         flex-direction: row;
     }
+    #menu-close{
+        display: block;   
+    }
     #menu-toggle{
         visibility: visible;
     }
@@ -631,7 +643,7 @@ footer{
         flex-direction: column;
         justify-content: start;
         gap: 25px;
-        padding: 100px 0 0 5%;
+        padding: 15px 0 0 5%;
         transition: left 1s ease;
     }
     .nav{
