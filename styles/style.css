@@ -189,7 +189,6 @@ header{
     display: flex;
     gap: 7.5%;
     background-color: var(--white);
-    box-shadow: 0 2px 5px;
 }
 .nav{
     align-items: center;
@@ -197,6 +196,7 @@ header{
     height: 100px;
     width: 75%;
     border-radius: 50px;
+    box-shadow: 0 2px 5px;
 }
 .nav-fixed{
     align-items: center;
@@ -645,20 +645,21 @@ footer{
         justify-content: start;
         gap: 25px;
         padding: 15px 0 0 5%;
-        transition: left 1s ease;
+        transition: left 1s ease, box-shadow 0.5s ease;
     }
     .nav{
-        left: -105%;
+        left: -100%;
     }
     .nav-fixed{
-        left: -105%;
-
+        left: -100%;
     }
     .nav-open{
         left: 0;
+        box-shadow: 1px 0px 500px;
     }
     #menu-toggle:hover, #menu-close:hover{
         background-color: var(--background-header);
+        transition: 0.2s;
     }
 }
 
