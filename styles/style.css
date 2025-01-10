@@ -142,6 +142,7 @@ header{
     justify-content: center;
 }
 #menu-toggle{
+    z-index: 1000;
     font-size: 1.5rem;
     visibility: hidden;
     width: 60px;
