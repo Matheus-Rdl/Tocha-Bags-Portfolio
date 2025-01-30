@@ -3,7 +3,7 @@
 
 :root{
     --background-header: #c3c3c3;
-    --yellow: #e5c460;
+    --yellow: #ffca2c;
     --brown: #563e3c;
     --brown2: #64201b;
     --white:  #F2F2F2;
@@ -23,6 +23,8 @@
 body{
     font-family: var(--font-text);
     background-color: var(--white);
+    position: absolute;
+    z-index: -2;
 }
 
 header{
@@ -106,7 +108,7 @@ header{
     right: 0;
     bottom: 0;
     border-left: 400px solid transparent;
-    border-bottom: 1200px solid var(--orange2);
+    border-bottom: 1200px solid var(--yellow);
     z-index: -7;
     opacity: 0.8;
 }
@@ -173,6 +175,8 @@ header{
 }
 .menu{
     margin-top: -50px;
+    position: relative;
+    z-index: 1000;
 }
 .menu-fixed{
     margin-top: 0;
@@ -180,7 +184,6 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
 }
 #nav{
     display: flex;
@@ -188,6 +191,7 @@ header{
     background-color: var(--white);
 }
 .nav{
+    padding: 0 40px;
     align-items: center;
     justify-content: center;
     height: 100px;
@@ -203,12 +207,43 @@ header{
     border-radius: 0;
     box-shadow: 0 0 2px;
 }
-#nav a{
+#nav a, #nav p, .menu-item{
     font-size: var(--font-nav);
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
     color: #000000;
+    height: 100%;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.submenu li{
+    margin-top: 15px;
+}
+
+.submenu {
+    display: none;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    list-style-type: none;
+    margin-left: -30px;
+    padding: 0px 15px 15px 15px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 5px black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/*
+.submenu li a:hover {
+}
+*/ 
+.menu-item:hover .submenu {
+    display: block;
 }
 
 main h2{
@@ -300,11 +335,15 @@ section:not(.principal section, #menu){
     height: 165px;
 }
 
+section .principal .bags{
+    padding: 0;
+}
 .bags-composition{
     position: relative;
-    padding: 10px;
-    margin: 10px 10px 10px -10%;
+    padding: 20px;
+    margin: 30px auto;
     width: 50%;
+    z-index: -1;
     line-height: 1.2;
 }
 
@@ -315,8 +354,65 @@ section:not(.principal section, #menu){
     right: 0px;
     width: 60%;
     height: 40%;
-    border-top: 3px solid black;
-    border-right: 3px solid black;
+    border-top: 5px solid var(--orange);
+    border-right: 5px solid var(--orange);
+}
+
+.bags-composition::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 60%;
+    height: 40%;
+    border-bottom: 5px solid var(--green);
+    border-left: 5px solid var(--green);
+}
+
+.bags-fabric{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+}
+.bags-fabric h5{
+    width: 200px;
+    height: 30px;
+    margin: 20px 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.fabric-title{
+    border: 3px solid;
+    border-radius: 30px;
+    box-shadow: var(--green) 0px 10px;
+}
+
+.fabric-title-button{
+    border: 3px solid;
+    border-radius: 30px;
+    box-shadow: var(--green) 0px 10px;
+}
+
+.percussion h4{
+    margin-left: 10%;
+
+}
+.percussion-atabaconga-conga, .percussion-djembe-ashico, .percussion-pandeiro, .percussion-pratos-acessorios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin: 30px 0;
+}
+.percussion-atabaconga-conga img, .percussion-djembe-ashico img, .percussion-pandeiro img, .percussion-pratos-acessorios img{
+    background-color: var(--orange);
+    aspect-ratio: 1 / 1;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.percussion-atabaconga-conga img:hover, .percussion-djembe-ashico img:hover, .percussion-pandeiro img:hover, .percussion-pratos-acessorios img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 2px black;
 }
 
 /*
@@ -376,13 +472,16 @@ section:not(.principal section, #menu){
     border-radius: 10px;
 } 
 .bills-budget div{
-    background-color:#e5c460;
+    border: 5px solid var(--yellow);
+    background-color:rgba(255, 215, 93, 0.3);
 }
 .bills-deadlines div{
-    background-color:#a0cb60;
+    border: 5px solid var(--green);
+    background-color:rgba(160, 203, 96, 0.5);
 }
 .bills-send div{
-    background-color:#ecb54e;
+    border: 5px solid var(--orange);
+    background-color:rgba(218, 141, 0, 0.4);
 }
 
 .contacts-div{
@@ -514,13 +613,14 @@ footer{
 }
 
 @media (max-width: 1400px){
+
+}
+
+@media (max-width: 1120px){
     #nav{
         width: 100%;
         border-radius: 0;
     }
-}
-
-@media (max-width: 1120px){
     .div1-work, .div2-work{
         flex-direction: column;
     }
@@ -613,7 +713,7 @@ footer{
     .header-triangle5{
         width: 0;
         border-left: 350px solid transparent;
-        border-bottom: 900px solid var(--orange2);
+        border-bottom: 900px solid var(--yellow);
     }
 
     #img1{
@@ -623,6 +723,9 @@ footer{
     #img2{
         width: 200px;
         margin: 0 60px 135px 0;
+    }
+    .percussion-atabaconga-conga, .percussion-djembe-ashico, .percussion-pandeiro, .percussion-pratos-acessorios{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -754,6 +857,9 @@ footer{
     #menu-toggle:hover, #menu-close:hover{
         background-color: var(--background-header);
         transition: 0.2s;
+    }
+    .percussion-atabaconga-conga, .percussion-djembe-ashico, .percussion-pandeiro, .percussion-pratos-acessorios{
+        grid-template-columns: 1fr 1fr;
     }
 }
 
