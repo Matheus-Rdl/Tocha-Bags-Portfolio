@@ -1,0 +1,18 @@
+@import 'apresentation.css';
+@import 'work.css';
+@import 'bags.css';
+@import 'percussion.css';
+@import 'bills.css';
+@import 'contacts.css';
+
+section:not(#menu){
+    padding: 0 10%;
+}
+
+section:not(.principal section, #menu){
+    margin: 50px 0;
+}
+
+section .principal .bags{
+    padding: 0;
+}

@@ -1,0 +1,112 @@
+header{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: -1;
+    box-shadow: 0 1px 3px;
+    overflow: hidden;
+}
+
+.header-triangle1{
+    position: absolute;
+    width: auto;
+    left: 0;
+    bottom: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 150px solid var(--white);
+    z-index: -1;
+}
+.header-triangle2{
+    position: absolute;
+    width: auto;
+    right: 0;
+    bottom: 0;
+    border-left: 100px solid transparent;
+    border-bottom: 300px solid var(--orange);
+    z-index: -2;
+}
+
+.header-triangle3{
+    position: absolute;
+    width: 60px;
+    right: 0;
+    bottom: 0;
+    border-left: 200px solid transparent;
+    border-bottom: 600px solid var(--green);
+    z-index: -4;
+}
+.header-triangle4{
+    position: absolute;
+    width: auto;
+    right: 0;
+    bottom: 0;
+    border-left: 290px solid transparent;
+    border-bottom: 900px solid var(--brown2);
+    z-index: -5;
+    /*opacity: 0.8;*/
+}
+.header-imgs{
+    width: 100%;
+    height: auto;
+}
+#img1{
+    position: absolute;
+    width: 330px;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; 
+    z-index: -3;
+}
+#img2{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; 
+    margin-right: 100px;
+    margin-bottom: 150px;
+    z-index: -6;
+}
+.header-triangle5{
+    position: absolute;
+    width: 60px;
+    right: 0;
+    bottom: 0;
+    border-left: 400px solid transparent;
+    border-bottom: 1200px solid var(--yellow);
+    z-index: -7;
+    opacity: 0.8;
+}
+.header-square{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: var(--orange);
+    z-index: -8;
+}
+.header-content{
+    width: auto;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    margin: 125px 0 0 5%;
+    flex-direction: column;
+    font-family: var(--font-style);
+    font-weight: 600;
+}
+
+.header-title{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.header-subtitle{
+    font-size: 2rem;
+}

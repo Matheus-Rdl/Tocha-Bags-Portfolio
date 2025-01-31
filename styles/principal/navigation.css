@@ -1,0 +1,123 @@
+
+#menu{
+    display: flex;
+    justify-content: center;
+}
+#menu-toggle{
+    font-size: 1.5rem;
+    visibility: hidden;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--white);
+    box-shadow: 0 2px 1px;
+}
+.menu-toggle{
+    z-index: 1000;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 5%;
+}
+.menu-toggle-fixed{
+    z-index: 1000;
+    position: fixed;
+    margin: 15px 0 0 15px;
+    top: 0;
+    left: 0;
+}
+#menu-close{
+    display: none;
+    font-size: 1.7rem;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+    background-color: var(--white);
+    border-style: none;  
+}
+.menu{
+    margin-top: -50px;
+    position: relative;
+    z-index: 1000;
+}
+.menu-fixed{
+    z-index: 1000;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+}
+.nav{
+    align-items: center;
+    padding: 0 40px;
+    height: 100px;
+    width: 75%;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px;
+}
+.nav-fixed{
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 200%;
+    border-radius: 0;
+    box-shadow: 0 0 2px;
+    .submenu li:first-child{
+        margin-top: 40px;
+    }
+}
+#nav a, .menu-item{
+    font-size: var(--font-nav);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.5s;
+}
+#nav a:not(#nav li a){
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+#nav a:hover, .submenu li:hover{
+    transform: scale(1.2);
+}
+.menu-item {
+    position: relative;
+}
+.submenu li:first-child{
+    margin-top: 70px;
+}
+.submenu li{
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.submenu {
+    display: none;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    list-style-type: none;
+    margin-left: -30px;
+    padding: 0px 30px 30px 30px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 5px black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/*
+.submenu li a:hover {
+}
+*/ 
+.menu-item:hover .submenu {
+    display: block;
+}

@@ -1,0 +1,21 @@
+.percussion h4{
+    margin-left: 10%;
+
+}
+.percussion-atabaconga-conga, .percussion-djembe-ashico, .percussion-pandeiro, .percussion-pratos-acessorios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin: 30px 0;
+}
+.percussion-atabaconga-conga img, .percussion-djembe-ashico img, .percussion-pandeiro img, .percussion-pratos-acessorios img{
+    background-color: var(--orange);
+    aspect-ratio: 1 / 1;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.percussion-atabaconga-conga img:hover, .percussion-djembe-ashico img:hover, .percussion-pandeiro img:hover, .percussion-pratos-acessorios img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 2px black;
+}
+
