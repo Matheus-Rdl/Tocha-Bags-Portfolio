@@ -10,7 +10,7 @@
     --gray: #dddddd;  
     --green: #5c9f43;
     --black: #000000;
-    --orange: #ecb54e;
+    --orange: #fbab18;
     --orange2: #e7b11e;
 
     --font-style: "Satisfy", cursive;
@@ -789,6 +789,17 @@ footer{
         flex-direction: row;
     }
     */
+    .bags-composition{
+        width: 90%;
+    }
+
+    .bags-fabric{
+        flex-direction: column;
+    }
+    .bags-fabric h5{
+        margin: auto;
+        margin-block: 20px;
+    }
 
     .bills-content{
         flex-direction: column;
