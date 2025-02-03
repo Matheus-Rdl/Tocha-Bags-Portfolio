@@ -8,7 +8,7 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="header-background">
             <div class="header-hole"></div>
             <div class="header-triangle2"></div>
@@ -31,37 +31,39 @@
         <section id="menu" class="menu">
             <nav id="nav" class="nav">
                 <button id="menu-close" class="menu-close">✖</button>
-                <a href="">Home</a>
+                <a href="#home">Home</a>
                 <div class="menu-item">
-                    <a href="#">Bags</a>
+                    <a href="javascript:void(0)">Bags</a>
                     <ul class="submenu">
-                        <li><a href="#">Composição</a></li>
-                        <li><a href="#">Materiais</a></li>
-                        <li><a href="#">Personalizáveis</a></li>
-                      </ul>
+                        <li><a href="#composition">Composição</a></li>
+                        <li><a href="#materials">Materiais</a></li>
+                        <li><a href="#customizable">Personalizáveis</a></li>
+                    </ul>
                 </div>
         
                 <div class="menu-item">
-                    <a href="#">Percussão</a>
+                    <a href="javascript:void(0)">Percussão</a>
                     <ul class="submenu">
-                        <li><a href="#">Atabaconga/Conga</a></li>
-                        <li><a href="#">Djembe/Ashico</a></li>
-                        <li><a href="#">Pandeiro</a></li>
-                        <li><a href="#">Pratos/Acessórios</a></li>
+                        <li><a href="#atabaconga-conga">Atabaconga/Conga</a></li>
+                        <li><a href="#djembe-ashico">Djembe/Ashico</a></li>
+                        <li><a href="#pandeiro">Pandeiro</a></li>
+                        <li><a href="#pratos-acessorios">Pratos/Acessórios</a></li>
                       </ul>
                 </div>
 
                 <div class="menu-item">
-                    <a href="#">Cordas</a>
+                    <a href="javascript:void(0)">Cordas</a>
                     <ul class="submenu">
-                        <li><a href="#">Composição</a></li>
-                        <li><a href="#">Materiais</a></li>
-                        <li><a href="#">Personalizáveis</a></li>
+                        <li><a href="#violao">Violão</a></li>
+                        <li><a href="#cavaquinho">Cavaquinho</a></li>
+                        <li><a href="#dupla">Dupla</a></li>
+                        <li><a href="#guitarra">Guitarra</a></li>
+                        <li><a href="#banjo">Banjo</a></li>
                       </ul>
                 </div>
 
-                <a href="#">Orçamento e pedidos</a>
-                <a href="#">Contatos</a>
+                <a href="#bills">Orçamento e pedidos</a>
+                <a href="#contacts">Contatos</a>
             </nav>
         </section>
 
@@ -98,8 +100,7 @@
         <section class="principal">
             <h2>Nossas Bags</h2>
             <section class="bags">
-                <h3>Bags</h3>
-                <h4>Composição</h4>
+                <h4 id="composition">Composição</h4>
                     <div class="bags-composition">
                         <p>Nossas bags são produzidas com materiais de alta qualidade e durabilidade, com duas opções de tecidos para revestimento externo. Tecido interno em pelúcia para evitar riscos ao instrumento, além de fornecer proteção extra durante transporte.</p>
                     </div>
@@ -107,13 +108,13 @@
                         <h5 class="fabric-title">Tecido Externo</h5>
                         <h5 class="fabric-title">Tecido Interno</h5>
                     </div>
-                <h4>Materiais</h4>
-                <h4>Personalizáveis</h4>
+                <h4 id="materials">Materiais</h4>
+                <h4 id="customizable">Personalizáveis</h4>
             </section>
     
             <section class="percussion">
                 <h3>Percussão</h3>
-                <h4>Atabaconga / Conga</h4>
+                <h4 id="atabaconga-conga">Atabaconga / Conga</h4>
                 <div class="percussion-atabaconga-conga">
                     <img src="" alt="">
                     <img src="" alt="">
@@ -124,7 +125,7 @@
                     <img src="" alt="">
                 </div>
                 
-                <h4>Djembe / Ashico</h4>
+                <h4 id="djembe-ashico">Djembe / Ashico</h4>
                 <div class="percussion-djembe-ashico">
                     <img src="" alt="">
                     <img src="" alt="">
@@ -132,7 +133,7 @@
                     <img src="" alt="">
                 </div>
 
-                <h4>Pandeiro</h4>
+                <h4 id="pandeiro">Pandeiro</h4>
                 <div class="percussion-pandeiro">
                     <img src="" alt="">
                     <img src="" alt="">
@@ -142,7 +143,7 @@
                     <img src="" alt="">
                 </div>
 
-                <h4>Pratos / Acessórios</h4>
+                <h4 id="pratos-acessorios">Pratos / Acessórios</h4>
                 <div class="percussion-pratos-acessorios">
                     <img src="" alt="">
                     <img src="" alt="">
@@ -160,15 +161,15 @@
 
             <section class="strings">
                 <h3>Cordas</h3>
-                <h4>Violão</h4>
-                <h4>Cavaquinho</h4>
-                <h4>Dupla</h4>
-                <h4>Guitarra</h4>
-                <h4>Banjo</h4>
+                <h4 id="violao">Violão</h4>
+                <h4 id="cavaquinho">Cavaquinho</h4>
+                <h4 id="dupla">Dupla</h4>
+                <h4 id="guitarra">Guitarra</h4>
+                <h4 id="banjo">Banjo</h4>
             </section>
         </section>
 
-        <section class="bills">
+        <section id="bills" class="bills">
             <h2>Orçamento e pedidos</h2>
             <div class="bills-content">
                 <div class="bills-budget">
@@ -195,7 +196,7 @@
             </div>
         </section>
 
-        <section class="contacts">
+        <section id="contacts" class="contacts">
             <h2>Contatos</h2>
             <h3>Entre em contato conosco</h3>
             <div class="contacts-div">
@@ -249,6 +250,7 @@
     <script src="scripts/header.js"></script>
     <script src="scripts/button-menu.js"></script>
     <script src="scripts/menu-nav.js"></script>
+    <script src="scripts/scroll-nav.js"></script>
 
 </body>
 </html>

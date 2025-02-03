@@ -1,7 +1,7 @@
 @import 'apresentation.css';
 @import 'work.css';
 @import 'bags.css';
-@import 'percussion.css';
+@import 'products.css';
 @import 'bills.css';
 @import 'contacts.css';
 
@@ -10,7 +10,8 @@ section:not(#menu){
 }
 
 section:not(.principal section, #menu){
-    margin: 50px 0;
+    margin-bottom: 50px;
+    padding-top: 80px;
 }
 
 section .principal .bags{

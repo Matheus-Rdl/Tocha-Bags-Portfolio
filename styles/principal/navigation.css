@@ -68,6 +68,7 @@
     width: 200%;
     border-radius: 0;
     box-shadow: 0 0 2px;
+    padding-inline: 60px;
     .submenu li:first-child{
         margin-top: 40px;
     }
@@ -117,7 +118,7 @@
 /*
 .submenu li a:hover {
 }
-*/ 
+*/
 .menu-item:hover .submenu {
     display: block;
 }

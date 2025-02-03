@@ -1,6 +1,6 @@
-.percussion h4{
+.percussion h4, .strings h4{
     margin-left: 10%;
-
+    padding-top: 80px;
 }
 .percussion-atabaconga-conga, .percussion-djembe-ashico, .percussion-pandeiro, .percussion-pratos-acessorios{
     display: grid;

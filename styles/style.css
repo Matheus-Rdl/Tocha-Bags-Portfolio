@@ -195,9 +195,9 @@
     
     .bills-budget, .bills-send{
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: row;
-        gap: 20px;
+        gap: 15px;
     }  
     .bills-deadlines{
         align-items: center;

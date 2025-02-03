@@ -1,3 +1,7 @@
+.bags h4{
+    padding-top: 80px;
+}
+
 .bags-composition{
     position: relative;
     padding: 20px;
@@ -53,4 +57,5 @@
     border-radius: 30px;
     box-shadow: var(--green) 0px 10px;
 }
+
 
