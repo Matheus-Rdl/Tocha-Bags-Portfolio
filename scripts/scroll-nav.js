@@ -7,7 +7,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
         const nav = document.getElementById('nav');
 
         window.scrollTo({
-            top: targetElement.offsetTop - 0,
+            top: targetElement.offsetTop - 40,
             behavior: 'smooth'
         });
 

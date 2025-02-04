@@ -1,11 +1,15 @@
+
+/* ==================== COMPOSIÇÃO ==================== */
+
 .bags h4{
     padding-top: 80px;
+    margin-bottom: 40PX;
 }
 
 .bags-composition{
     position: relative;
     padding: 20px;
-    margin: 30px auto;
+    margin: 0 auto;
     width: 50%;
     z-index: -1;
     line-height: 1.2;
@@ -37,6 +41,7 @@
     display: flex;
     gap: 10%;
     justify-content: center;
+    margin: 30px auto;
 }
 .bags-fabric h5{
     width: 200px;
@@ -58,4 +63,39 @@
     box-shadow: var(--green) 0px 10px;
 }
 
+/* ==================== MATERIAS ==================== */
 
+.materials-content{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.materials-imgs{
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    border-radius: 20px;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+.materials-imgs:hover{
+    opacity: 0.6;
+}
+
+.materials-title{
+    font-weight: bold;
+    height: 50px;
+    margin-block: 20px;
+    text-align: center;
+}
+
+.materials-content li{
+    margin: 0 0 10px 20px;
+}
+
+
+/* ==================== PERSOLIZAVEIS ==================== */
