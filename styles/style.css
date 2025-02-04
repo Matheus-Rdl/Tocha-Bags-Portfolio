@@ -69,6 +69,9 @@
         padding: 0 0 20px 60px;
         box-shadow: 0 0;
     }
+    #submenu li:first-child{
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 800px){
@@ -249,7 +252,14 @@
         text-align: center;
     }
     section:not(#menu){
-        padding: 0 5%;
+        padding: 40px 5% 0 5%;
+    }
+    .percussion h4, .strings h4, .bags h4{
+        padding-top: 40px;
+        margin-left: 15%;
+    }
+    .contacts-maps{
+        height: 450px;
     }
 }
 

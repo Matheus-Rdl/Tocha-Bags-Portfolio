@@ -4,10 +4,14 @@ document.querySelectorAll('nav a').forEach(anchor => {
 
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
+        const nav = document.getElementById('nav');
 
         window.scrollTo({
             top: targetElement.offsetTop - 0,
             behavior: 'smooth'
         });
+
+        nav.classList.remove('nav-open');
+
     });
 });
