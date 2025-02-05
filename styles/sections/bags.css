@@ -26,6 +26,18 @@
     border-right: 5px solid var(--orange);
 }
 
+
+.bags-composition::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 60%;
+    height: 40%;
+    border-top: 5px solid var(--orange);
+    border-right: 5px solid var(--orange);
+}
+
 .bags-composition::before {
     content: '';
     position: absolute;
@@ -97,5 +109,66 @@
     margin: 0 0 10px 20px;
 }
 
+.materials-text{
+    text-align: center;
+    margin: 30px auto 0 auto;
+    font-style: italic;
+    text-decoration: underline;
+}
 
-/* ==================== PERSOLIZAVEIS ==================== */
+
+/* ==================== PERSONALIZAVEIS ==================== */
+
+.customizable-content{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: space-between;
+}
+
+.customizable-content img{
+    width: 100%;
+    height: auto;
+    min-width: 120px;
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+.customizable-content p {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.customizable-text{
+    position: relative;
+    padding: 20px;
+    margin: 50px auto;
+    width: 50%;
+    z-index: -1;
+    line-height: 1.2;
+}
+
+.customizable-text::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60%;
+    height: 40%;
+    border-top: 5px solid var(--orange);
+    border-left: 5px solid var(--orange);
+}
+
+.customizable-text::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 60%;
+    height: 40%;
+    border-bottom: 5px solid var(--green);
+    border-right: 5px solid var(--green);
+}
+
+

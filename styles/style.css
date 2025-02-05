@@ -72,6 +72,12 @@
     #submenu li:first-child{
         margin-top: 20px;
     }
+    .customizable-content{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        margin-inline: 10%;
+
+    }
 }
 
 @media (max-width: 800px){
@@ -171,7 +177,7 @@
         flex-direction: row;
     }
     */
-    .bags-composition{
+    .bags-composition, .customizable-text{
         width: 90%;
     }
 
@@ -254,6 +260,10 @@
         gap: 15px;
         margin-left: 70px;
     }
+    .customizable-content{
+        margin-inline: 0;
+
+    }
 }
 
 @media (max-width: 500px){
@@ -277,6 +287,10 @@
     }
     .contacts-maps{
         height: 450px;
+    }
+    .products-apresentation-img{
+        width: 120%;
+        margin-left: -10%;
     }
 }
 
