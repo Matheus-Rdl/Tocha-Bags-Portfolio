@@ -75,8 +75,10 @@
     .customizable-content{
         display: grid;
         grid-template-columns: repeat(2, 2fr);
-        margin-inline: 10%;
-
+        margin-inline: 15%;
+    }
+    .percussion-atabaconga-conga, .percussion-djembe-ashico, .percussion-pandeiro, .percussion-pratos-acessorios, .strings-violao, .strings-cavaquinho, .strings-dupla, .strings-guitarra, .strings-banjo{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -135,9 +137,6 @@
     #img2{
         width: 200px;
         margin: 0 60px 135px 0;
-    }
-    .percussion-atabaconga-conga, .percussion-djembe-ashico, .percussion-pandeiro, .percussion-pratos-acessorios{
-        grid-template-columns: 1fr 1fr 1fr;
     }
 
 
@@ -230,6 +229,9 @@
         width: fit-content;
         margin: 0 auto;
     }
+    .customizable-content{
+        margin-inline: 10%;
+    }
 }
 
 @media (max-width: 700px){
@@ -289,8 +291,14 @@
         height: 450px;
     }
     .products-apresentation-img{
-        width: 120%;
-        margin-left: -10%;
+        width: 130%;
+        margin-left: -15%;
+    }
+    .percussion-atabaconga-conga, .percussion-djembe-ashico, .percussion-pandeiro, .percussion-pratos-acessorios, .strings-violao, .strings-cavaquinho, .strings-dupla, .strings-guitarra, .strings-banjo{
+        grid-template-columns: 1fr 1fr;
+    }
+    section .products{
+        margin: 0;
     }
 }
 
@@ -313,9 +321,7 @@
         background-color: var(--background-header);
         transition: 0.2s;
     }
-    .percussion-atabaconga-conga, .percussion-djembe-ashico, .percussion-pandeiro, .percussion-pratos-acessorios{
-        grid-template-columns: 1fr 1fr;
-    }
+
 }
 
 

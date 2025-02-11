@@ -17,3 +17,7 @@ section:not(.principal section, #menu){
 section .principal .bags{
     padding: 0;
 }
+
+section .products{
+    margin: 0 -10%;
+}
