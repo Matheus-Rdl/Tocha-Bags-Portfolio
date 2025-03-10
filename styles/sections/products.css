@@ -17,9 +17,11 @@
     opacity: 0;
 }
 .modal img {
-    max-width: 90%;
-    max-height: 90%;
+    width: 60%;
+    max-height: 60%;
     border-radius: 10px;
+    border: 2px solid white;
+    padding: 10%;
 }
 .close {
     position: absolute;

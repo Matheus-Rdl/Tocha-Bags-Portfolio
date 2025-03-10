@@ -2,7 +2,7 @@
 @import 'sections/sections.css';
 
 
-@media (max-width: 1400px){
+@media (max-width: 1700px){
 
 }
 
@@ -23,6 +23,15 @@
 }
 
 @media (max-width: 1000px){
+    .header-logo{
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+        top: unset;
+        bottom: -125%;
+        width: 150px;
+    }
+
     #nav{
         position: fixed;
         top: 0;
@@ -94,8 +103,14 @@
     }
     .header-content{
         width: 100%;
-        margin: 30px 0 0 0;
-        justify-content: center;
+        margin: -80px 0 0 15px;
+        align-items: flex-start;
+    }
+    .header-logo{
+        right: unset;
+        left: 0;
+        transform: translateX(0);
+        bottom: -200%;
     }
     .header-title{
         font-size: 3rem;
