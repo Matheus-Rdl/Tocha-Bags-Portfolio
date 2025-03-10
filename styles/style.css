@@ -64,10 +64,15 @@
         padding-top: 20px;
     }
     .submenu{
-        position: static;
+        position: absolute;
         margin: 0 0 0 -40px ;
         padding: 0 0 20px 60px;
         box-shadow: 0 0;
+    }
+
+
+    .menu-item:hover {
+        margin-bottom: 220px;
     }
     #submenu li:first-child{
         margin-top: 20px;
@@ -100,7 +105,6 @@
         font-size: 1.5rem;
         margin: 0;
     }
-
     .header-triangle1{
         position: absolute;
         width: auto;
@@ -138,12 +142,9 @@
         width: 200px;
         margin: 0 60px 135px 0;
     }
-
-
 }
 
 @media (max-width: 750px){
-
     .work-content{
         flex-direction: column;
     }
@@ -179,7 +180,6 @@
     .bags-composition, .customizable-text{
         width: 90%;
     }
-
     .bags-fabric{
         flex-direction: column;
     }
@@ -187,13 +187,11 @@
         margin: auto;
         margin-block: 20px;
     }
-
     .bills-content{
         flex-direction: column;
         margin: 0;
         gap: 30px;
     }
-    
     .bills-content div:not(.bills-content div div){
         width: 100%;
     }
@@ -202,7 +200,6 @@
         height: 30%;
         margin: 0;
     }
-    
     .bills-budget, .bills-send{
         align-items: center;
         justify-content: center;
@@ -266,6 +263,11 @@
         margin-inline: 0;
 
     }
+    .close {
+        font-size: 50px;
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media (max-width: 500px){
@@ -303,7 +305,6 @@
 }
 
 @media (max-width: 450px){
-
     .apresentation-text{
         margin: 0 5%;
     }
@@ -321,13 +322,4 @@
         background-color: var(--background-header);
         transition: 0.2s;
     }
-
 }
-
-
-
-
-
-
-
-

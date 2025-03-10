@@ -5,7 +5,8 @@ footer{
     background-color: var(--brown);
     background: linear-gradient(to left, rgba(100, 32, 27, 1), rgba(100, 32, 27, 0.8));
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-logo{
@@ -16,8 +17,6 @@ footer{
     margin: 10px 0 0 10px;
     z-index: 1;
 }
-
-
 
 #f-r-yellow{
     position: absolute;

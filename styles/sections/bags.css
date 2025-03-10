@@ -131,6 +131,11 @@
     min-width: 120px;
     max-width: 250px;
     border-radius: 50%;
+    transition: 1s;
+}
+
+.customizable-content img:hover{
+    opacity: 0.6;
 }
 
 .customizable-content p {

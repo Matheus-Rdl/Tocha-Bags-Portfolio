@@ -8,6 +8,17 @@ body{
     z-index: -2;
 }
 
+.img-clave{
+    width: 10%;
+    height: auto;
+    max-width: 100px;
+    min-width: 60px;
+    opacity: 0.2;
+    position: absolute;
+    z-index: -2;
+    overflow: hidden;
+}
+
 main h2{
     font-size: 2.5rem;
     margin-bottom: 30px;

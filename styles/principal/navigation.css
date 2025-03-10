@@ -102,8 +102,10 @@
 }
 
 .submenu {
-    display: none;
+    visibility: hidden; 
     z-index: -1;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+    opacity: 0;
     position: absolute;
     left: 0;
     top: 100%;
@@ -120,5 +122,7 @@
 }
 */
 .menu-item:hover .submenu {
-    display: block;
+    visibility: visible; 
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0s 0s; 
 }
