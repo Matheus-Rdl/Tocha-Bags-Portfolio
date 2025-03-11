@@ -16,25 +16,84 @@
     transition: opacity 0.5s ease;
     opacity: 0;
 }
-.modal img {
+.modal-content{
+    width: 100%;
+    display: flex;
+}
+
+.modal-content-img{
+    width: 40%;
+    margin-inline: 2.5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content span {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5%;
+}
+.modal-content span h3{
+    color: var(--white);
+}
+.modal-content span p{
+    color: var(--white);
+    text-indent: 30px;
+}
+
+.modal-div-img{
+    width: 90%;
+    background-color: rgb(255, 255, 255, 0.15);
+    border-radius: 10px;
+    border: 2px solid var(--white);
+}
+#modalImg {
+
+    /*
     width: 60%;
     max-height: 60%;
     border-radius: 10px;
     border: 2px solid white;
     padding: 10%;
+    */
+    width: 95%;
+
+    padding: 30px 2.5%;
+    transition: opacity 0.3s ease-in-out;
+    
+}
+
+.modal-content-other-imgs{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.3);
+    margin-top: 10px;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+.modal-content-other-imgs img{
+    width: 25%;
+    transition: opacity 0.3s ease-in-out;
 }
 .close {
     position: absolute;
     top: 20px;
     right: 30px;
-    font-size: 60px;
-    width: 60px;
-    height: 60px;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     border: 2px solid white;
     color: white;
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .products-apresentation-img{

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     thumbnails.forEach(img =>{
         img.addEventListener("click", function (){
-            modalImg.src = this.src;
+            modalImg.src = img.src;//this.src
             openModal();
         });
     });

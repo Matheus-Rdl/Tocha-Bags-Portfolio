@@ -1,360 +1,518 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Portfolio</title>
-</head>
-<body>
-    <img src="assets/clave-de-sol.png" class="img-body1 img-clave">
+  </head>
+  <body>
+    <img src="assets/clave-de-sol.png" class="img-body1 img-clave" />
     <header id="home">
-        <div class="header-background">
-            <div class="header-hole"></div>
-            <div class="header-triangle2"></div>
-            <div class="header-triangle3"></div>
-            <div class="header-triangle4"></div>
-            <div class="header-triangle5"></div>
-            <div class="header-square"></div>
-            <div class="header-imgs">
-                <img id="img1" src="assets/header/img1.png" alt="imagens das bags">
-                <img id="img2" src="assets/header/img2.png" alt="imagens das bags">
-            </div>
+      <div class="header-background">
+        <div class="header-hole"></div>
+        <div class="header-triangle2"></div>
+        <div class="header-triangle3"></div>
+        <div class="header-triangle4"></div>
+        <div class="header-triangle5"></div>
+        <div class="header-square"></div>
+        <div class="header-imgs">
+          <img id="img1" src="assets/header/img1.png" alt="imagens das bags" />
+          <img id="img2" src="assets/header/img2.png" alt="imagens das bags" />
         </div>
-        <div class="header-content">
-            <h1 class="header-title">Tocha Bags</h1>
-            <h2 class="header-subtitle">O alfaiate dos seus instrumentos</h2>
-            <img class="header-logo" src="assets/logo-tocha-bags.png" alt="Logo da empresa Tocha Bags">
-        </div>
+      </div>
+      <div class="header-content">
+        <h1 class="header-title">Tocha Bags</h1>
+        <h2 class="header-subtitle">O alfaiate dos seus instrumentos</h2>
+        <img
+          class="header-logo"
+          src="assets/logo-tocha-bags.png"
+          alt="Logo da empresa Tocha Bags"
+        />
+      </div>
     </header>
     <main>
-        <button id="menu-toggle" class="menu-toggle">☰</button>
-        <section id="menu" class="menu">
-            <nav id="nav" class="nav">
-                <button id="menu-close" class="menu-close">✖</button>
-                <a href="#home">Home</a>
-                <div class="menu-item">
-                    <a href="#">Bags</a>
-                    <ul id="submenu" class="submenu">
-                        <li><a href="#composition">Composição</a></li>
-                        <li><a href="#materials">Materiais</a></li>
-                        <li><a href="#customizable">Personalizáveis</a></li>
-                    </ul>
-                </div>
-        
-                <div class="menu-item">
-                    <a href="#">Percussão</a>
-                    <ul id="submenu" class="submenu">
-                        <li><a href="#atabaconga-conga">Atabaconga/Conga</a></li>
-                        <li><a href="#djembe-ashico">Djembe/Ashico</a></li>
-                        <li><a href="#pandeiro">Pandeiro</a></li>
-                        <li><a href="#pratos-acessorios">Pratos/Acessórios</a></li>
-                      </ul>
-                </div>
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+      <section id="menu" class="menu">
+        <nav id="nav" class="nav">
+          <button id="menu-close" class="menu-close">✖</button>
+          <a href="#home">Home</a>
+          <div class="menu-item">
+            <a href="#">Bags</a>
+            <ul id="submenu" class="submenu">
+              <li><a href="#composition">Composição</a></li>
+              <li><a href="#materials">Materiais</a></li>
+              <li><a href="#customizable">Personalizáveis</a></li>
+            </ul>
+          </div>
 
-                <div class="menu-item">
-                    <a href="#">Cordas</a>
-                    <ul id="submenu" class="submenu">
-                        <li><a href="#violao">Violão</a></li>
-                        <li><a href="#cavaquinho">Cavaquinho</a></li>
-                        <li><a href="#dupla">Dupla</a></li>
-                        <li><a href="#guitarra">Guitarra</a></li>
-                        <li><a href="#banjo">Banjo</a></li>
-                      </ul>
-                </div>
+          <div class="menu-item">
+            <a href="#">Percussão</a>
+            <ul id="submenu" class="submenu">
+              <li><a href="#atabaconga-conga">Atabaconga/Conga</a></li>
+              <li><a href="#djembe-ashico">Djembe/Ashico</a></li>
+              <li><a href="#pandeiro">Pandeiro</a></li>
+              <li><a href="#pratos-acessorios">Pratos/Acessórios</a></li>
+            </ul>
+          </div>
 
-                <a href="#bills">Orçamento e pedidos</a>
-                <a href="#contacts">Contatos</a>
-            </nav>
-        </section>
+          <div class="menu-item">
+            <a href="#">Cordas</a>
+            <ul id="submenu" class="submenu">
+              <li><a href="#violao">Violão</a></li>
+              <li><a href="#cavaquinho">Cavaquinho</a></li>
+              <li><a href="#dupla">Dupla</a></li>
+              <li><a href="#guitarra">Guitarra</a></li>
+              <li><a href="#banjo">Banjo</a></li>
+            </ul>
+          </div>
 
-        <section class="apresentation">
-            <h2>A Tocha Bags</h2>
-            <p class="apresentation-text">Tocha Bags nasceu da paixão pela música e da necessidade de expressar essa paixão de forma única e personalizada. Somos uma marca especializada em confeções sob medida para o universo musical, criando bags que vão além da funcionalidade, transformando-se em verdadeiras extensões da identidade de cada músico.</p>
-        </section>
+          <a href="#bills">Orçamento e pedidos</a>
+          <a href="#contacts">Contatos</a>
+        </nav>
+      </section>
 
-        <section class="work">
-            <h2>Nosso trabalho</h2>
-            <div class="work-content">
-                <div class="work-text">
-                    <p>Sabemos que cada instrumento possui suas particularidades, assim como cada músico tem seu estilo e suas necessidades. Por isso, na Tocha Bags, cada peça é criada em colaboração com o cliente, levando em consideração:</p>
-                    <p><strong>O instrumento:</strong> Bags sob medida para diversos instrumentos, como guitarras, baixos, violões, teclados, baterias, instrumentos de sopro e muito mais.</p>
-                    <p><strong>A proteção</strong> Utilizamos materiais de alta qualidade e técnicas de confecção que garantem a segurança do seu instrumento, protegendo-o de impactos, umidade e variações de temperatura.</p>
-                    <p><strong>O estilo:</strong> Do clássico ao moderno, do minimalista ao extravagante, personalizamos cada detalhe para que sua bag reflita sua personalidade e seu estilo musical.</p>
-                    <p><strong> A praticidade:</strong> Compartimentos inteligentes, alças confortáveis e acessório funcionais tornam sua bag uma aliada no transporte e organização do seu equipamento."</p>
-                </div>
-                <div class="work-container-img">
-                    <div class="work-imgs">
-                        <div class="div1-work">
-                            <img id="work-img" src="assets/header/img1.png" alt="img1-work">
-                            <img id="work-img" src="assets/header/img2.png" alt="img2-work">
-                        </div>
-                        <div class="div2-work">
-                            <img id="work-img" src="assets/header/img3.png" alt="img3-work">
-                            <img id="work-img" src="assets/header/img4.png" alt="img4-work">
-                        </div>
-                    </div>
-                </div>
+      <section class="apresentation">
+        <h2>A Tocha Bags</h2>
+        <p class="apresentation-text">
+          Tocha Bags nasceu da paixão pela música e da necessidade de expressar
+          essa paixão de forma única e personalizada. Somos uma marca
+          especializada em confeções sob medida para o universo musical, criando
+          bags que vão além da funcionalidade, transformando-se em verdadeiras
+          extensões da identidade de cada músico.
+        </p>
+      </section>
+
+      <section class="work">
+        <h2>Nosso trabalho</h2>
+        <div class="work-content">
+          <div class="work-text">
+            <p>
+              Sabemos que cada instrumento possui suas particularidades, assim
+              como cada músico tem seu estilo e suas necessidades. Por isso, na
+              Tocha Bags, cada peça é criada em colaboração com o cliente,
+              levando em consideração:
+            </p>
+            <p>
+              <strong>O instrumento:</strong> Bags sob medida para diversos
+              instrumentos, como guitarras, baixos, violões, teclados, baterias,
+              instrumentos de sopro e muito mais.
+            </p>
+            <p>
+              <strong>A proteção</strong> Utilizamos materiais de alta qualidade
+              e técnicas de confecção que garantem a segurança do seu
+              instrumento, protegendo-o de impactos, umidade e variações de
+              temperatura.
+            </p>
+            <p>
+              <strong>O estilo:</strong> Do clássico ao moderno, do minimalista
+              ao extravagante, personalizamos cada detalhe para que sua bag
+              reflita sua personalidade e seu estilo musical.
+            </p>
+            <p>
+              <strong> A praticidade:</strong> Compartimentos inteligentes,
+              alças confortáveis e acessório funcionais tornam sua bag uma
+              aliada no transporte e organização do seu equipamento."
+            </p>
+          </div>
+          <div class="work-container-img">
+            <div class="work-imgs">
+              <div class="div1-work">
+                <img
+                  id="work-img"
+                  src="assets/header/img1.png"
+                  alt="img1-work"
+                />
+                <img
+                  id="work-img"
+                  src="assets/header/img2.png"
+                  alt="img2-work"
+                />
+              </div>
+              <div class="div2-work">
+                <img
+                  id="work-img"
+                  src="assets/header/img3.png"
+                  alt="img3-work"
+                />
+                <img
+                  id="work-img"
+                  src="assets/header/img4.png"
+                  alt="img4-work"
+                />
+              </div>
             </div>
-        </section>
-
-        <section class="principal">
-            <h2>Nossa Produção</h2>
-            <section class="bags">
-                <h4 id="composition">Composição</h4>
-                    <div class="bags-composition">
-                        <p>Nossas bags são produzidas com materiais de alta qualidade e durabilidade, com duas opções de tecidos para revestimento externo. Tecido interno em pelúcia para evitar riscos ao instrumento, além de fornecer proteção extra durante transporte.</p>
-                    </div>
-                    <div class="bags-fabric">
-                        <h5 class="fabric-title">Tecido Externo</h5>
-                        <h5 class="fabric-title">Tecido Interno</h5>
-                    </div>
-
-                <h4 id="materials">Materiais</h4>
-                <div class="materials-content">
-                    <div>
-                        <img class="materials-imgs" src="assets/nylon.png" alt="Foto do nylon das bags">
-                        <h5 class="materials-title">Nylon poliéster 1680 PVC</h5>
-                        <li>Azul petróleo</li>
-                        <li>Branco / Cinza</li>
-                        <li>Dourado / Marrom</li>
-                        <li>Preto</li>
-                        <li>Prata</li>
-                        <li>Vermelho</li>
-                        <li>Verde</li>
-                    </div>
-
-                    <div>
-                        <img class="materials-imgs" src="assets/lona.png" alt="Foto da lona das bags">
-                        <h5 class="materials-title">Lona capota marítima</h5>
-                        <li>Preto</li>
-                    </div>
-
-                    <div>
-                        <img class="materials-imgs" src="assets/pelucia.png" alt="Pelucia usada no interior das bags">
-                        <h5 class="materials-title">Pelúcia</h5>
-                        <li>Amarelo</li>
-                        <li>Branco / Cinza</li>
-                        <li>Marrom</li>
-                        <li>Preto</li>
-                        <li>Prata</li>
-                        <li>Vermelho / Laranja</li>
-                        <li>Verde</li>
-                        <li>Rosa</li>
-                        <li>Azul</li>
-                        <li>Multicolor</li>
-                    </div>
-                </div>
-
-                <p class="materials-text">Algumas cores tem varios tons, podendo escolher várias tonalidades.</p>
-
-                <h4 id="customizable">Personalizáveis</h4>
-                <div class="customizable-content">
-                    <div>
-                        <img src="assets/p1.png" alt="Foto de Bordado em uma bolsa">
-                        <p>Bordados</p>
-                    </div>
-
-                    <div>
-                        <img src="assets/p2.png" alt="Foto de desenhos nas bags">
-                        <p>Padrôes ou desenhos</p>
-                    </div>
-
-                    <div>
-                        <img src="assets/p3.png" alt="Foto mostrando rodinhas em bolsas">
-                        <p>Rodinhas</p>
-                    </div>
-
-                    <div>
-                        <img src="assets/p4.png" alt="Uma foto de uma bag dupla">
-                        <p>Bags duplas ou triplas</p>
-                    </div>
-                </div>
-
-                <div class="customizable-text">
-                    <p>Na TochaBags, tudo é personalizável, desde, o bordado, quanto a cores e modelos. è possivel adicionar itens, cores e padrôes/desenhos. Converse com nossa equipe e deixe a criatividade correr solta!</p>
-                </div>
-            </section>
-    
-            <section class="products">
-                <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img id="modalImg">
-                </div>
-
-                <section class="percussion">
-                    <h2>Nossas Bags</h2>
-                    <h3>Percussão</h3>
-                    <img class="products-apresentation-img" src="assets/percussion-img.png" alt="Foto de homem tocando tambor">
-                    <h4 id="atabaconga-conga">Atabaconga / Conga</h4>
-                    <div class="percussion-atabaconga-conga">
-                        <img src="assets/header/img1.png" alt="" class="thumbnail">
-                        <img src="assets/header/img2.png" alt="" class="thumbnail">
-                        <img src="assets/header/img2.png" alt="" class="thumbnail">
-                        <img src="assets/header/img3.png" alt="" class="thumbnail">
-                        <img src="assets/header/img4.png" alt="" class="thumbnail">
-                    </div>
-                    
-                    <h4 id="djembe-ashico">Djembe / Ashico</h4>
-                    <div class="percussion-djembe-ashico">
-                        <img src="assets/header/img1.png" alt="" class="thumbnail">
-                        <img src="assets/header/img1.png" alt="" class="thumbnail">
-                        <img src="assets/header/img2.png" alt="" class="thumbnail">
-                        <img src="assets/header/img3.png" alt="" class="thumbnail">
-                        <img src="assets/header/img3.png" alt="" class="thumbnail">
-                        <img src="assets/header/img4.png" alt="" class="thumbnail">
-                    </div>
-    
-                    <h4 id="pandeiro">Pandeiro</h4>
-                    <div class="percussion-pandeiro">
-                        <img src="assets/header/img1.png" alt="" class="thumbnail">
-                        <img src="assets/header/img2.png" alt="" class="thumbnail">
-                        <img src="assets/header/img3.png" alt="" class="thumbnail">
-                        <img src="assets/header/img4.png" alt="" class="thumbnail">
-                    </div>
-    
-                    <h4 id="pratos-acessorios">Pratos / Acessórios</h4>
-                    <div class="percussion-pratos-acessorios">
-                        <img src="assets/header/img1.png" alt="" class="thumbnail">
-                        <img src="assets/header/img2.png" alt="" class="thumbnail">
-                        <img src="assets/header/img2.png" alt="" class="thumbnail">
-                        <img src="assets/header/img2.png" alt="" class="thumbnail">
-                        <img src="assets/header/img3.png" alt="" class="thumbnail">
-                        <img src="assets/header/img4.png" alt="" class="thumbnail">
-                    </div>
-                </section>
-    
-                <section class="strings">
-                    <h3>Cordas</h3>
-                    <img class="products-apresentation-img" src="assets/strings-img.png" alt="Foto de homem tocando violão">
-                    <h4 id="violao">Violão</h4>
-                    <div class="strings-violao">
-                        <img src="assets/header/img1.png" alt="" class="thumbnail">
-                        <img src="assets/header/img2.png" alt="" class="thumbnail">
-                        <img src="assets/header/img3.png" alt="" class="thumbnail">
-                        <img src="assets/header/img4.png" alt="" class="thumbnail">
-                        <img src="assets/header/img4.png" alt="" class="thumbnail">
-                        <img src="assets/header/img4.png" alt="" class="thumbnail">
-                    </div>
-
-                    <h4 id="cavaquinho">Cavaquinho</h4>
-                    <div class="strings-cavaquinho">
-                        <img src="assets/header/img1.png" alt="" class="thumbnail">
-                        <img src="assets/header/img1.png" alt="" class="thumbnail">
-                        <img src="assets/header/img2.png" alt="" class="thumbnail">
-                        <img src="assets/header/img3.png" alt="" class="thumbnail">
-                        <img src="assets/header/img3.png" alt="" class="thumbnail">
-                        <img src="assets/header/img4.png" alt="" class="thumbnail">
-                    </div>
-
-                    <h4 id="dupla">Dupla</h4>
-                    <div class="strings-dupla">
-                        <img src="assets/header/img1.png" alt="" class="thumbnail">
-                        <img src="assets/header/img2.png" alt="" class="thumbnail">
-                        <img src="assets/header/img3.png" alt="" class="thumbnail">
-                        <img src="assets/header/img4.png" alt="" class="thumbnail">
-                    </div>
-
-                    <h4 id="guitarra">Guitarra</h4>
-                    <div class="strings-guitarra">
-                        <img src="assets/header/img1.png" alt="" class="thumbnail">
-                        <img src="assets/header/img1.png" alt="" class="thumbnail">
-                        <img src="assets/header/img2.png" alt="" class="thumbnail">
-                        <img src="assets/header/img3.png" alt="" class="thumbnail">
-                        <img src="assets/header/img3.png" alt="" class="thumbnail">
-                        <img src="assets/header/img4.png" alt="" class="thumbnail">
-                    </div>
-
-                    <h4 id="banjo">Banjo</h4>
-                    <div class="strings-banjo">
-                        <img src="assets/header/img1.png" alt="" class="thumbnail">
-                        <img src="assets/header/img2.png" alt="" class="thumbnail">
-                        <img src="assets/header/img3.png" alt="" class="thumbnail">
-                        <img src="assets/header/img4.png" alt="" class="thumbnail">
-                        <img src="assets/header/img4.png" alt="" class="thumbnail">
-                        <img src="assets/header/img4.png" alt="" class="thumbnail">
-                    </div>
-                </section>
-            </section>
-        </section>
-
-        <section id="bills" class="bills">
-            <h2>Orçamento e pedidos</h2>
-            <div class="bills-content">
-                <div class="bills-budget">
-                    <img src="assets/budget.png" alt="Imagem sobre orçamento">
-                    <div class="bills-text">
-                        <h3>Orçamento</h3>
-                        <p>Por se tratar de uma bag personalizada, os orçamentos <strong>são feitos diretamente com nossas vendedoras</strong> e representantes, com contato direto com o artista, dependendo da quantidade, materiais e modelo.</p>
-                    </div>
-                </div>
-                <div class="bills-deadlines">
-                    <img src="assets/deadlines.png" alt="Imagem sobre prazos">
-                    <div class="bills-text">
-                        <h3>Prazos</h3>
-                        <p>Cada bag tem prazo médio de produção de <strong>10 dias úteis, a depender da agenda.</strong> Em caso de urgência na produção da sua bag, temos uma taxa para adiantar seu pedido</p>
-                    </div>
-                </div>
-                <div class="bills-send">
-                    <img src="assets/send.png" alt="Imagem sobre Envios">
-                    <div class="bills-text">
-                        <h3>Envio</h3>
-                        <p>O envio pode ser feito através dos correios <strong>Jadlog o melhor envio</strong>, bem como uber flash. Oferecemos também a opção de <strong>retirar a bag em nosso atelier</strong>, você será muito bem vindo!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contacts" class="contacts">
-            <h2>Contatos</h2>
-            <h3>Entre em contato conosco</h3>
-            <div class="contacts-div">
-                <div class="contacts-location">
-                    <div class="contacts-information">
-                        <div class="contacts-information-content">
-                            <img class="contacts-information-icon" src="assets/icon-mapa.png" alt="Ícone do Mapa">
-                            <div>
-                                <h4>Localização:</h4>
-                                <p>Avenida da França<br>Rua dos alemão, 890</p>
-                            </div>
-                        </div>
-                    </div>
-                    <iframe class="contacts-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14624.76769335495!2d-46.75193764424389!3d-23.59744891234026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce598dbcfcfc27%3A0x4d81ac1e2f4c9be5!2sTocha%20Bags!5e0!3m2!1spt-BR!2sbr!4v1736525358280!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="contacts-social">
-                    <div class="contacts-social-content">
-                        <img class="contacts-social-icon" src="assets/icon-facebook.png" alt="Ícone do Facebook">
-                        <div><h4>TochaBags Facebook</h4></div>
-                    </div>
-                    <div class="contacts-social-content">
-                        <img class="contacts-social-icon" src="assets/icon-instagram.png" alt="Ícone do Instagram">
-                        <div><h4>TochaBags Instagram</h4></div>
-                    </div>
-                    <div class="contacts-social-content">
-                        <img class="contacts-social-icon" src="assets/icon-whatsapp.png" alt="Ícone do WhatsApp">
-                        <div><h4>TochaBags WhatsApp</h4></div>
-                    </div>
-                    <div class="contacts-social-content">
-                        <img class="contacts-social-icon" src="assets/icon-gmail.png" alt="Ícone do Gmail">
-                        <div><h4>TochaBags Email</h4></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <img class="footer-logo" src="assets/logo-tocha-bags.png" alt="Logo da empresa Tocha Bags">
-        <div>
-            <div id="f-r-yellow1"></div>
-            <div id="f-r-yellow2"></div>
-            <div id="f-r-green1"></div>
-            <div id="f-r-green2"></div>
-            <div id="f-r-orange1"></div>
-            <div id="f-r-orange2"></div>
-            <!--<script src="scripts/footer.js"></script>-->
+          </div>
         </div>
+      </section>
+
+      <section class="principal">
+        <h2>Nossa Produção</h2>
+        <section class="bags">
+          <h4 id="composition">Composição</h4>
+          <div class="bags-composition">
+            <p>
+              Nossas bags são produzidas com materiais de alta qualidade e
+              durabilidade, com duas opções de tecidos para revestimento
+              externo. Tecido interno em pelúcia para evitar riscos ao
+              instrumento, além de fornecer proteção extra durante transporte.
+            </p>
+          </div>
+          <div class="bags-fabric">
+            <h5 class="fabric-title">Tecido Externo</h5>
+            <h5 class="fabric-title">Tecido Interno</h5>
+          </div>
+
+          <h4 id="materials">Materiais</h4>
+          <div class="materials-content">
+            <div>
+              <img
+                class="materials-imgs"
+                src="assets/nylon.png"
+                alt="Foto do nylon das bags"
+              />
+              <h5 class="materials-title">Nylon poliéster 1680 PVC</h5>
+              <li>Azul petróleo</li>
+              <li>Branco / Cinza</li>
+              <li>Dourado / Marrom</li>
+              <li>Preto</li>
+              <li>Prata</li>
+              <li>Vermelho</li>
+              <li>Verde</li>
+            </div>
+
+            <div>
+              <img
+                class="materials-imgs"
+                src="assets/lona.png"
+                alt="Foto da lona das bags"
+              />
+              <h5 class="materials-title">Lona capota marítima</h5>
+              <li>Preto</li>
+            </div>
+
+            <div>
+              <img
+                class="materials-imgs"
+                src="assets/pelucia.png"
+                alt="Pelucia usada no interior das bags"
+              />
+              <h5 class="materials-title">Pelúcia</h5>
+              <li>Amarelo</li>
+              <li>Branco / Cinza</li>
+              <li>Marrom</li>
+              <li>Preto</li>
+              <li>Prata</li>
+              <li>Vermelho / Laranja</li>
+              <li>Verde</li>
+              <li>Rosa</li>
+              <li>Azul</li>
+              <li>Multicolor</li>
+            </div>
+          </div>
+
+          <p class="materials-text">
+            Algumas cores tem varios tons, podendo escolher várias tonalidades.
+          </p>
+
+          <h4 id="customizable">Personalizáveis</h4>
+          <div class="customizable-content">
+            <div>
+              <img src="assets/p1.png" alt="Foto de Bordado em uma bolsa" />
+              <p>Bordados</p>
+            </div>
+
+            <div>
+              <img src="assets/p2.png" alt="Foto de desenhos nas bags" />
+              <p>Padrôes ou desenhos</p>
+            </div>
+
+            <div>
+              <img
+                src="assets/p3.png"
+                alt="Foto mostrando rodinhas em bolsas"
+              />
+              <p>Rodinhas</p>
+            </div>
+
+            <div>
+              <img src="assets/p4.png" alt="Uma foto de uma bag dupla" />
+              <p>Bags duplas ou triplas</p>
+            </div>
+          </div>
+
+          <div class="customizable-text">
+            <p>
+              Na TochaBags, tudo é personalizável, desde, o bordado, quanto a
+              cores e modelos. è possivel adicionar itens, cores e
+              padrôes/desenhos. Converse com nossa equipe e deixe a criatividade
+              correr solta!
+            </p>
+          </div>
+        </section>
+
+        <section class="products">
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+              <div class="modal-content-img">
+                <div class="modal-div-img">
+                  <img id="modalImg" alt="Imagem Principal"/>
+                </div>
+                <div class="modal-content-other-imgs">
+                  <img class="modal-imgs" src="assets/header/img1.png" alt="Imagem 1" />
+                  <img class="modal-imgs" src="assets/header/img2.png" alt="Imagem 2" />
+                  <img class="modal-imgs" src="assets/header/img3.png" alt="Imagem 3" />
+                </div>
+              </div>
+              <span>
+                <h3>Título do produto</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Debitis odit accusantium facilis assumenda aliquam? Iste quam
+                  inventore eveniet cum, voluptatem maxime dolor magnam
+                  voluptatum explicabo minima, aut quidem atque. Et.
+                </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestiae ex suscipit dolores? Veritatis tenetur fugit
+                  pariatur alias expedita, quas, laboriosam nisi autem dicta
+                  totam, minima odio veniam! Nulla, ea labore.
+                </p>
+              </span>
+            </div>
+          </div>
+
+          <section class="percussion">
+            <h2>Nossas Bags</h2>
+            <h3>Percussão</h3>
+            <img
+              class="products-apresentation-img"
+              src="assets/percussion-img.png"
+              alt="Foto de homem tocando tambor"
+            />
+            <h4 id="atabaconga-conga">Atabaconga / Conga</h4>
+            <div class="percussion-atabaconga-conga">
+              <img src="assets/header/img1.png" alt="" class="thumbnail" />
+              <img src="assets/header/img2.png" alt="" class="thumbnail" />
+              <img src="assets/header/img2.png" alt="" class="thumbnail" />
+              <img src="assets/header/img3.png" alt="" class="thumbnail" />
+              <img src="assets/header/img4.png" alt="" class="thumbnail" />
+            </div>
+
+            <h4 id="djembe-ashico">Djembe / Ashico</h4>
+            <div class="percussion-djembe-ashico">
+              <img src="assets/header/img1.png" alt="" class="thumbnail" />
+              <img src="assets/header/img1.png" alt="" class="thumbnail" />
+              <img src="assets/header/img2.png" alt="" class="thumbnail" />
+              <img src="assets/header/img3.png" alt="" class="thumbnail" />
+              <img src="assets/header/img3.png" alt="" class="thumbnail" />
+              <img src="assets/header/img4.png" alt="" class="thumbnail" />
+            </div>
+
+            <h4 id="pandeiro">Pandeiro</h4>
+            <div class="percussion-pandeiro">
+              <img src="assets/header/img1.png" alt="" class="thumbnail" />
+              <img src="assets/header/img2.png" alt="" class="thumbnail" />
+              <img src="assets/header/img3.png" alt="" class="thumbnail" />
+              <img src="assets/header/img4.png" alt="" class="thumbnail" />
+            </div>
+
+            <h4 id="pratos-acessorios">Pratos / Acessórios</h4>
+            <div class="percussion-pratos-acessorios">
+              <img src="assets/header/img1.png" alt="" class="thumbnail" />
+              <img src="assets/header/img2.png" alt="" class="thumbnail" />
+              <img src="assets/header/img2.png" alt="" class="thumbnail" />
+              <img src="assets/header/img2.png" alt="" class="thumbnail" />
+              <img src="assets/header/img3.png" alt="" class="thumbnail" />
+              <img src="assets/header/img4.png" alt="" class="thumbnail" />
+            </div>
+          </section>
+
+          <section class="strings">
+            <h3>Cordas</h3>
+            <img
+              class="products-apresentation-img"
+              src="assets/strings-img.png"
+              alt="Foto de homem tocando violão"
+            />
+            <h4 id="violao">Violão</h4>
+            <div class="strings-violao">
+              <img src="assets/header/img1.png" alt="" class="thumbnail" />
+              <img src="assets/header/img2.png" alt="" class="thumbnail" />
+              <img src="assets/header/img3.png" alt="" class="thumbnail" />
+              <img src="assets/header/img4.png" alt="" class="thumbnail" />
+              <img src="assets/header/img4.png" alt="" class="thumbnail" />
+              <img src="assets/header/img4.png" alt="" class="thumbnail" />
+            </div>
+
+            <h4 id="cavaquinho">Cavaquinho</h4>
+            <div class="strings-cavaquinho">
+              <img src="assets/header/img1.png" alt="" class="thumbnail" />
+              <img src="assets/header/img1.png" alt="" class="thumbnail" />
+              <img src="assets/header/img2.png" alt="" class="thumbnail" />
+              <img src="assets/header/img3.png" alt="" class="thumbnail" />
+              <img src="assets/header/img3.png" alt="" class="thumbnail" />
+              <img src="assets/header/img4.png" alt="" class="thumbnail" />
+            </div>
+
+            <h4 id="dupla">Dupla</h4>
+            <div class="strings-dupla">
+              <img src="assets/header/img1.png" alt="" class="thumbnail" />
+              <img src="assets/header/img2.png" alt="" class="thumbnail" />
+              <img src="assets/header/img3.png" alt="" class="thumbnail" />
+              <img src="assets/header/img4.png" alt="" class="thumbnail" />
+            </div>
+
+            <h4 id="guitarra">Guitarra</h4>
+            <div class="strings-guitarra">
+              <img src="assets/header/img1.png" alt="" class="thumbnail" />
+              <img src="assets/header/img1.png" alt="" class="thumbnail" />
+              <img src="assets/header/img2.png" alt="" class="thumbnail" />
+              <img src="assets/header/img3.png" alt="" class="thumbnail" />
+              <img src="assets/header/img3.png" alt="" class="thumbnail" />
+              <img src="assets/header/img4.png" alt="" class="thumbnail" />
+            </div>
+
+            <h4 id="banjo">Banjo</h4>
+            <div class="strings-banjo">
+              <img src="assets/header/img1.png" alt="" class="thumbnail" />
+              <img src="assets/header/img2.png" alt="" class="thumbnail" />
+              <img src="assets/header/img3.png" alt="" class="thumbnail" />
+              <img src="assets/header/img4.png" alt="" class="thumbnail" />
+              <img src="assets/header/img4.png" alt="" class="thumbnail" />
+              <img src="assets/header/img4.png" alt="" class="thumbnail" />
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <section id="bills" class="bills">
+        <h2>Orçamento e pedidos</h2>
+        <div class="bills-content">
+          <div class="bills-budget">
+            <img src="assets/budget.png" alt="Imagem sobre orçamento" />
+            <div class="bills-text">
+              <h3>Orçamento</h3>
+              <p>
+                Por se tratar de uma bag personalizada, os orçamentos
+                <strong>são feitos diretamente com nossas vendedoras</strong> e
+                representantes, com contato direto com o artista, dependendo da
+                quantidade, materiais e modelo.
+              </p>
+            </div>
+          </div>
+          <div class="bills-deadlines">
+            <img src="assets/deadlines.png" alt="Imagem sobre prazos" />
+            <div class="bills-text">
+              <h3>Prazos</h3>
+              <p>
+                Cada bag tem prazo médio de produção de
+                <strong>10 dias úteis, a depender da agenda.</strong> Em caso de
+                urgência na produção da sua bag, temos uma taxa para adiantar
+                seu pedido
+              </p>
+            </div>
+          </div>
+          <div class="bills-send">
+            <img src="assets/send.png" alt="Imagem sobre Envios" />
+            <div class="bills-text">
+              <h3>Envio</h3>
+              <p>
+                O envio pode ser feito através dos correios
+                <strong>Jadlog o melhor envio</strong>, bem como uber flash.
+                Oferecemos também a opção de
+                <strong>retirar a bag em nosso atelier</strong>, você será muito
+                bem vindo!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts">
+        <h2>Contatos</h2>
+        <h3>Entre em contato conosco</h3>
+        <div class="contacts-div">
+          <div class="contacts-location">
+            <div class="contacts-information">
+              <div class="contacts-information-content">
+                <img
+                  class="contacts-information-icon"
+                  src="assets/icon-mapa.png"
+                  alt="Ícone do Mapa"
+                />
+                <div>
+                  <h4>Localização:</h4>
+                  <p>Avenida da França<br />Rua dos alemão, 890</p>
+                </div>
+              </div>
+            </div>
+            <iframe
+              class="contacts-maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14624.76769335495!2d-46.75193764424389!3d-23.59744891234026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce598dbcfcfc27%3A0x4d81ac1e2f4c9be5!2sTocha%20Bags!5e0!3m2!1spt-BR!2sbr!4v1736525358280!5m2!1spt-BR!2sbr"
+              width="800"
+              height="600"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="contacts-social">
+            <div class="contacts-social-content">
+              <img
+                class="contacts-social-icon"
+                src="assets/icon-facebook.png"
+                alt="Ícone do Facebook"
+              />
+              <div><h4>TochaBags Facebook</h4></div>
+            </div>
+            <div class="contacts-social-content">
+              <img
+                class="contacts-social-icon"
+                src="assets/icon-instagram.png"
+                alt="Ícone do Instagram"
+              />
+              <div><h4>TochaBags Instagram</h4></div>
+            </div>
+            <div class="contacts-social-content">
+              <img
+                class="contacts-social-icon"
+                src="assets/icon-whatsapp.png"
+                alt="Ícone do WhatsApp"
+              />
+              <div><h4>TochaBags WhatsApp</h4></div>
+            </div>
+            <div class="contacts-social-content">
+              <img
+                class="contacts-social-icon"
+                src="assets/icon-gmail.png"
+                alt="Ícone do Gmail"
+              />
+              <div><h4>TochaBags Email</h4></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img
+        class="footer-logo"
+        src="assets/logo-tocha-bags.png"
+        alt="Logo da empresa Tocha Bags"
+      />
+      <div>
+        <div id="f-r-yellow1"></div>
+        <div id="f-r-yellow2"></div>
+        <div id="f-r-green1"></div>
+        <div id="f-r-green2"></div>
+        <div id="f-r-orange1"></div>
+        <div id="f-r-orange2"></div>
+        <!--<script src="scripts/footer.js"></script>-->
+      </div>
     </footer>
 
     <script src="scripts/header.js"></script>
@@ -363,6 +521,6 @@
     <script src="scripts/scroll-nav.js"></script>
     <script src="scripts/image-click.js"></script>
     <script src="scripts/random-image.js"></script>
-
-</body>
+    <script src="scripts/change-product-img.js"></script>
+  </body>
 </html>
