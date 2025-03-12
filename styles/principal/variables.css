@@ -5,7 +5,7 @@
     font-family: 'AnkeCalligraphic';
     src: url(../../fonts/AnkeCalligraphicFG.woff2) format('woff2'),
          url(../../fonts/AnkeCalligraphicFG.woff) format('woff'),
-         url(../../fonts/anke-calligraphic.ttf) format('ttf');
+         url(../../fonts/AnkeCalligraphic.ttf) format('ttf');
     font-weight: normal;
     font-style: normal;
 }

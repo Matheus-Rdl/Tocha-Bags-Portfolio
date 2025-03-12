@@ -63,14 +63,14 @@
     padding: 10%;
     */
     padding: 10px 0;
-    max-height: 300px;
+    max-height: 250px;
     max-width: 95%;
     transition: opacity 0.3s ease-in-out;
     
 }
 
 .modal-content-other-imgs{
-    padding: 10px;
+    padding: 5px;
     display: flex;
     align-items: center;
     background-color: rgb(255, 255, 255, 0.3);
