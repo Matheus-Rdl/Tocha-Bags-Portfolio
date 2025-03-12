@@ -46,6 +46,8 @@
 }
 
 .modal-div-img{
+    display: flex;
+    justify-content: center;
     width: 90%;
     background-color: rgb(255, 255, 255, 0.15);
     border-radius: 10px;
@@ -60,9 +62,9 @@
     border: 2px solid white;
     padding: 10%;
     */
-    width: 95%;
-
-    padding: 30px 2.5%;
+    padding: 10px 0;
+    max-height: 300px;
+    max-width: 95%;
     transition: opacity 0.3s ease-in-out;
     
 }
