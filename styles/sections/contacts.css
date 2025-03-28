@@ -1,48 +1,48 @@
-.contacts-div{
-    display: flex;
-    margin: 0 15%;
-    margin-top: 40px;
-    margin-bottom: 200px;
-    gap: 50px;
+.contacts-div {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 200px;
+  gap: 50px;
 }
-.contacts-location{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.contacts-location {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-.contacts-maps{
-    height: 350px;
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 0 4px;;
+.contacts-maps {
+  height: 350px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 4px;
 }
-.contacts-information{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.contacts-information {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.contacts-information-content{
-    display: flex;
-    gap: 10px;
-    align-items: center;
+.contacts-information-content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
-.contacts-information-icon{
-    height: 64px;
-    width: 64px;
+.contacts-information-icon {
+  height: 64px;
+  width: 64px;
 }
-.contacts-social{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.contacts-social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-.contacts-social-icon{
-    height: 30px;
-    width: 30px;
+.contacts-social-icon {
+  height: 30px;
+  width: 30px;
 }
-.contacts-social-content{
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.contacts-social-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }

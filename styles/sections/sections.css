@@ -7,6 +7,9 @@
 
 section:not(#menu){
     padding: 0 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 section:not(.principal section, #menu){

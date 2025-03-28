@@ -1,184 +1,194 @@
-@import 'principal/principal.css';
-@import 'sections/sections.css';
+@import "principal/principal.css";
+@import "sections/sections.css";
 
-
-@media (max-width: 1700px){
-
+@media (max-width: 1700px) {
 }
 
-@media (max-width: 1120px){
-    #nav{
-        width: 100%;
-        border-radius: 0;
-    }
-    .div1-work, .div2-work{
-        flex-direction: column;
-    }
-    .div2-work{
-        margin: 100px 0 0 0;
-    }
-    .work-imgs{
-        flex-direction: row;
-    }
+@media (max-width: 1120px) {
+  #nav {
+    width: 100%;
+    border-radius: 0;
+  }
+  .div1-work,
+  .div2-work {
+    flex-direction: column;
+  }
+  .div2-work {
+    margin: 100px 0 0 0;
+  }
+  .work-imgs {
+    flex-direction: row;
+  }
 }
 
-@media (max-width: 1000px){
-    .header-logo{
-        position: absolute;
-        transform: translateX(50%);
-        right: 50%;
-        top: unset;
-        bottom: -125%;
-        width: 150px;
-    }
+@media (max-width: 1000px) {
+  .header-logo {
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    top: unset;
+    bottom: -125%;
+    width: 150px;
+  }
 
-    #nav{
-        position: fixed;
-        top: 0;
-        width: 70%;
-        height: 200%;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: start;
-        gap: 25px;
-        padding: 15px 0 0 5%;
-        transition: left 1s ease, box-shadow 0.5s ease;
-    }
-    .nav{
-        left: -100%;
-    }
-    .nav-fixed{
-        left: -100%;
-    }
-    #menu-toggle{
-        visibility: visible;
-    }
-    #menu{
-        position: fixed;
-        top: 0;
-        justify-content: flex-start;
-    }
-    #menu-close{
-        display: block;   
-    }
-    .nav-open{
-        left: 0;
-        box-shadow: 1px 0px 500px;
-    }
-    #nav a:not(#nav li a){
-        padding: 0;
-    }
-    .submenu li:first-child{
-        margin-top: 10px;
-        padding-top: 20px;
-    }
-    .submenu{
-        position: absolute;
-        margin: 0 0 0 -40px ;
-        padding: 0 0 20px 60px;
-        box-shadow: 0 0;
-    }
+  #nav {
+    position: fixed;
+    top: 0;
+    width: 70%;
+    height: 200%;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: start;
+    gap: 25px;
+    padding: 15px 0 0 5%;
+    transition: left 1s ease, box-shadow 0.5s ease;
+  }
+  .nav {
+    left: -100%;
+  }
+  .nav-fixed {
+    left: -100%;
+  }
+  #menu-toggle {
+    visibility: visible;
+  }
+  #menu {
+    position: fixed;
+    top: 0;
+    justify-content: flex-start;
+  }
+  #menu-close {
+    display: block;
+  }
+  .nav-open {
+    left: 0;
+    box-shadow: 1px 0px 500px;
+  }
+  #nav a:not(#nav li a) {
+    padding: 0;
+  }
+  .submenu li:first-child {
+    margin-top: 10px;
+    padding-top: 20px;
+  }
+  .submenu {
+    position: absolute;
+    margin: 0 0 0 -40px;
+    padding: 0 0 20px 60px;
+    box-shadow: 0 0;
+  }
 
-
-    .menu-item:hover {
-        margin-bottom: 220px;
-    }
-    #submenu li:first-child{
-        margin-top: 20px;
-    }
-    .customizable-content{
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-        margin-inline: 15%;
-    }
-    .percussion-atabaconga-conga, .percussion-djembe-ashico, .percussion-pandeiro, .percussion-pratos-acessorios, .strings-violao, .strings-cavaquinho, .strings-dupla, .strings-guitarra, .strings-banjo{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  .menu-item:hover {
+    margin-bottom: 220px;
+  }
+  #submenu li:first-child {
+    margin-top: 20px;
+  }
+  .bills-content{
+    margin: 0;
+  }
+  .customizable-content {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin-inline: 15%;
+  }
+  .percussion-atabaconga-conga,
+  .percussion-djembe-ashico,
+  .percussion-pandeiro,
+  .percussion-pratos-acessorios,
+  .strings-violao,
+  .strings-cavaquinho,
+  .strings-dupla,
+  .strings-guitarra,
+  .strings-banjo {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
-@media (max-width: 800px){
-    #menu{
-        display: flex;
-        justify-content: center;
-    }
-    .header-content{
-        width: 100%;
-        margin: -80px 0 0 15px;
-        align-items: flex-start;
-    }
-    .header-logo{
-        right: unset;
-        left: 0;
-        transform: translateX(0);
-        bottom: -200%;
-    }
-    .header-title{
-        font-size: 3rem;
-        margin: 0;
-    }
-    .header-subtitle{
-        font-size: 1.5rem;
-        margin: 0;
-    }
-    .header-triangle1{
-        position: absolute;
-        width: auto;
-        left: 0;
-        bottom: 0;
-        border-right: 100vw solid transparent;
-        border-bottom: 150px solid var(--white);
-        z-index: -1;
-    }
-    .header-triangle2{
-        border-left: 80px solid transparent;
-        border-bottom: 200px solid var(--orange);
-    }
-    
-    .header-triangle3{
-        width: 0;
-        border-left: 200px solid transparent;
-        border-bottom: 500px solid var(--green);
-    }
-    .header-triangle4{
-        border-left: 220px solid transparent;
-        border-bottom: 540px solid var(--brown2);
-    }
-    .header-triangle5{
-        width: 0;
-        border-left: 350px solid transparent;
-        border-bottom: 900px solid var(--yellow);
-    }
+@media (max-width: 800px) {
+  #menu {
+    display: flex;
+    justify-content: center;
+  }
+  .header-content {
+    width: 100%;
+    margin: -80px 0 0 15px;
+    align-items: flex-start;
+  }
+  .header-logo {
+    right: unset;
+    left: 0;
+    transform: translateX(0);
+    bottom: -200%;
+  }
+  .header-title {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .header-subtitle {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .header-triangle1 {
+    position: absolute;
+    width: auto;
+    left: 0;
+    bottom: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 150px solid var(--white);
+    z-index: -1;
+  }
+  .header-triangle2 {
+    border-left: 80px solid transparent;
+    border-bottom: 200px solid var(--orange);
+  }
 
-    #img1{
-        width: 220px;
-        margin: 0 -30px 25px 0;
-    }
-    #img2{
-        width: 200px;
-        margin: 0 60px 135px 0;
-    }
+  .header-triangle3 {
+    width: 0;
+    border-left: 200px solid transparent;
+    border-bottom: 500px solid var(--green);
+  }
+  .header-triangle4 {
+    border-left: 220px solid transparent;
+    border-bottom: 540px solid var(--brown2);
+  }
+  .header-triangle5 {
+    width: 0;
+    border-left: 350px solid transparent;
+    border-bottom: 900px solid var(--yellow);
+  }
+
+  #img1 {
+    width: 220px;
+    margin: 0 -30px 25px 0;
+  }
+  #img2 {
+    width: 200px;
+    margin: 0 60px 135px 0;
+  }
 }
 
-@media (max-width: 750px){
-    .work-content{
-        flex-direction: column;
-    }
-    .work-container-img{
-        width: 100%;
-    }
-    .work-imgs{
-        flex-direction: column;
-    }
-    .div1-work, .div2-work{
-        flex-direction: row;
-    } 
-    .div2-work{
-        margin: 0 0 0 100px;
-    } 
-    .work-text{
-        width: 90%;
-    }
-    /*
+@media (max-width: 750px) {
+  .work-content {
+    flex-direction: column;
+  }
+  .work-container-img {
+    width: 100%;
+  }
+  .work-imgs {
+    flex-direction: column;
+  }
+  .div1-work,
+  .div2-work {
+    flex-direction: row;
+  }
+  .div2-work {
+    margin: 0 0 0 100px;
+  }
+  .work-text {
+    width: 90%;
+  }
+  /*
     .work-text, .work-imgs{
         width: 90%;
     }
@@ -192,175 +202,185 @@
         flex-direction: row;
     }
     */
-    .bags-composition, .customizable-text{
-        width: 90%;
-    }
-    .bags-fabric{
-        flex-direction: column;
-    }
-    .bags-fabric h5{
-        margin: auto;
-        margin-block: 20px;
-    }
-    .bills-content{
-        flex-direction: column;
-        margin: 0;
-        gap: 30px;
-    }
-    .bills-content div:not(.bills-content div div){
-        width: 100%;
-    }
-    .bills img{
-        width: 30%;
-        height: 30%;
-        margin: 0;
-    }
-    .bills-budget, .bills-send{
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        gap: 15px;
-    }  
-    .bills-deadlines{
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: row-reverse;
-        gap: 20px;
-    }
-    .bills-text{
-        width: 50%;
-    }
-    .contacts-div{
-        margin-inline: 0;
-        flex-direction: column;
-    }
-    .contacts-location {
-        align-items: center;
-    }
-    .contacts-social{
-        width: fit-content;
-        margin: 0 auto;
-    }
-    .customizable-content{
-        margin-inline: 10%;
-    }
+  .bags-composition,
+  .customizable-text {
+    width: 90%;
+  }
+  .bags-fabric {
+    flex-direction: column;
+  }
+  .bags-fabric h5 {
+    margin: auto;
+    margin-block: 20px;
+  }
+  .bills-content {
+    flex-direction: column;
+    margin: 0;
+    gap: 30px;
+  }
+  .bills-content div:not(.bills-content div div) {
+    width: 100%;
+  }
+  .bills img {
+    width: 30%;
+    height: 30%;
+    margin: 0;
+  }
+  .bills-budget,
+  .bills-send {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .bills-deadlines {
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    gap: 20px;
+  }
+  .bills-text {
+    width: 50%;
+  }
+  .contacts-div {
+    margin-inline: 0;
+    flex-direction: column;
+  }
+  .contacts-location {
+    align-items: center;
+  }
+  .contacts-social {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .customizable-content {
+    margin-inline: 10%;
+  }
 }
 
-@media (max-width: 700px){
-    .materials-content{
-        flex-direction: column;
-        align-items: center;
-    }
-    .materials-imgs{
-        width: 100%;
-        min-width: 100px;
-    }
-    .materials-title{
-        height: auto;
-        margin-block: 20px;
-    }
+@media (max-width: 700px) {
+  .materials-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .materials-imgs {
+    width: 100%;
+    min-width: 100px;
+  }
+  .materials-title {
+    height: auto;
+    margin-block: 20px;
+  }
+  
 }
 
-@media (max-width: 600px){
-    #work-img{
-        width: 120px;
-        height: 120px;
-    }
-    .div1-work{
-        gap: 15px;
-    }
-    .div2-work{
-        /*margin-top: 60px;*/
-        gap: 15px;
-        margin-left: 70px;
-    }
-    .customizable-content{
-        margin-inline: 0;
+@media (max-width: 600px) {
+  #work-img {
+    width: 120px;
+    height: 120px;
+  }
+  .div1-work {
+    gap: 15px;
+  }
+  .div2-work {
+    /*margin-top: 60px;*/
+    gap: 15px;
+    margin-left: 70px;
+  }
+  .customizable-content {
+    margin-inline: 0;
+  }
 
-    }
+  .modal {
+    align-items: flex-start;
+    padding-top: 80px;
+  }
 
-    .modal{
-        align-items: flex-start;
-        padding-top: 80px;
-    }
+  .modal-content {
+    flex-direction: column;
+    margin-inline: 10%;
+  }
 
-    .modal-content{
-        flex-direction: column;
-        margin-inline: 10%;
-    }
+  .modal-content-img {
+    width: 100%;
+    flex-direction: row;
+    gap: 5%;
+  }
 
-    .modal-content-img{
-        width: 100%;
-        flex-direction: row;
-        gap: 5%;
-    }
+  .modal-content-other-imgs {
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+  }
 
-    .modal-content-other-imgs{
-        flex-direction: column;
-        width: 30%;
-        height: 100%;
-    }
+  .modal-content-other-imgs img {
+    width: 100%;
+  }
 
-    .modal-content-other-imgs img{
-        width: 100%;
-    }
+  .modal-content span {
+    width: 100%;
+  }
 
-    .modal-content span{
-        width: 100%;
-    }
-
+  .percussion-atabaconga-conga,
+  .percussion-djembe-ashico,
+  .percussion-pandeiro,
+  .percussion-pratos-acessorios,
+  .strings-violao,
+  .strings-cavaquinho,
+  .strings-dupla,
+  .strings-guitarra,
+  .strings-banjo {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-@media (max-width: 500px){
-    .bills-budget, .bills-send,.bills-deadlines{
-        flex-direction: column;
-    }  
-    .bills img{
-        width: 175px;
-        height: 175px;
-    }
-    .bills-text{
-        width: 90%;
-        text-align: center;
-    }
-    section:not(#menu){
-        padding: 40px 5% 0 5%;
-    }
-    .percussion h4, .strings h4, .bags h4{
-        padding-top: 40px;
-        margin-left: 15%;
-    }
-    .contacts-maps{
-        height: 450px;
-    }
-    .products-apresentation-img{
-        width: 130%;
-        margin-left: -15%;
-    }
-    .percussion-atabaconga-conga, .percussion-djembe-ashico, .percussion-pandeiro, .percussion-pratos-acessorios, .strings-violao, .strings-cavaquinho, .strings-dupla, .strings-guitarra, .strings-banjo{
-        grid-template-columns: 1fr 1fr;
-    }
-    section .products{
-        margin: 0;
-    }
+@media (max-width: 500px) {
+  .bills-budget,
+  .bills-send,
+  .bills-deadlines {
+    flex-direction: column;
+  }
+  .bills img {
+    width: 175px;
+    height: 175px;
+  }
+  .bills-text {
+    width: 90%;
+    text-align: center;
+  }
+  section:not(#menu) {
+    padding: 40px 5% 0 5%;
+  }
+  .contacts-maps {
+    height: 450px;
+  }
+  .products-apresentation-img {
+    width: 130%;
+  }
+
+  section .products {
+    margin: 0;
+  }
 }
 
-@media (max-width: 450px){
-    .apresentation-text{
-        margin: 0 5%;
-    }
-    .div1-work, .div2-work{
-        flex-direction: column;
-    }
-    .div2-work{
-        margin: 70px 0 0 0;
-        gap: 15px;
-    }
-    .work-imgs{
-        flex-direction: row;
-    }
-    #menu-toggle:hover, #menu-close:hover{
-        background-color: var(--background-header);
-        transition: 0.2s;
-    }
+@media (max-width: 450px) {
+  .apresentation-text {
+    margin: 0 5%;
+  }
+  .div1-work,
+  .div2-work {
+    flex-direction: column;
+  }
+  .div2-work {
+    margin: 70px 0 0 0;
+    gap: 15px;
+  }
+  .work-imgs {
+    flex-direction: row;
+  }
+  #menu-toggle:hover,
+  #menu-close:hover {
+    background-color: var(--background-header);
+    transition: 0.2s;
+  }
 }

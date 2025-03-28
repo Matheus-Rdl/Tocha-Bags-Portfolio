@@ -9,7 +9,6 @@ thumbnails.forEach((thumbnail) => {
 
 function changeImage(thumbnail) {
   if (isPaused) return;
-
   isPaused = true;
 
   let mainImg = document.getElementById("modalImg");

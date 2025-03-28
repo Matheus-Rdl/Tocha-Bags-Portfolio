@@ -1,125 +1,187 @@
-.thumbnail { 
-    width: 100%; 
-    object-fit: cover;
-}
-.modal{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.5s ease;
-    opacity: 0;
-}
-.modal-content{
-    width: 100%;
-    display: flex;
+.instruments-title {
+  transform: rotate(1deg);
+  position: relative;
+  width: max-content;
 }
 
-.modal-content-img{
-    width: 40%;
-    margin-inline: 2.5%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+.instruments-title:nth-child(1) {
+  transform: rotate(-1deg);
+  position: relative;
+  width: max-content;
+}
+
+.instruments-title div:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: var(--yellow);
+  padding: 30px 250px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.instruments-title div:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: black;
+  padding: 30px 250px;
+  transform: translate(-53%, -35%);
+  z-index: -2;
+}
+
+.products h3 {
+  font-size: 1.4rem;
+  margin: 50px 0;
+  font-weight: bold;
+}
+
+.thumbnail {
+  width: 100%;
+  object-fit: cover;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+.modal-content {
+  width: 100%;
+  display: flex;
+}
+
+.modal-content-img {
+  width: 40%;
+  margin-inline: 2.5%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-content span {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 5%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5%;
 }
-.modal-content span h3{
-    color: var(--white);
+.modal-content span h3 {
+  color: var(--white);
 }
-.modal-content span p{
-    color: var(--white);
-    text-indent: 30px;
+.modal-content span p {
+  color: var(--white);
+  text-indent: 30px;
 }
 
-.modal-div-img{
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    background-color: rgb(255, 255, 255, 0.15);
-    border-radius: 10px;
-    border: 2px solid var(--white);
+.modal-div-img {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  background-color: rgb(255, 255, 255, 0.15);
+  border-radius: 10px;
+  border: 2px solid var(--white);
 }
 #modalImg {
-
-    /*
+  /*
     width: 60%;
     max-height: 60%;
     border-radius: 10px;
     border: 2px solid white;
     padding: 10%;
     */
-    padding: 10px 0;
-    max-height: 250px;
-    max-width: 95%;
-    transition: opacity 0.3s ease-in-out;
-    
+  padding: 10px 0;
+  max-height: 250px;
+  max-width: 95%;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.modal-content-other-imgs{
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    background-color: rgb(255, 255, 255, 0.3);
-    margin-top: 10px;
-    border: 2px solid var(--white);
-    border-radius: 10px;
-    gap: 10px;
-    justify-content: center;
+.modal-content-other-imgs {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 0.3);
+  margin-top: 10px;
+  border: 2px solid var(--white);
+  border-radius: 10px;
+  gap: 10px;
+  justify-content: center;
 }
-.modal-content-other-imgs img{
-    width: 25%;
-    transition: opacity 0.3s ease-in-out;
+.modal-content-other-imgs img {
+  width: 25%;
+  transition: opacity 0.3s ease-in-out;
 }
 .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    border: 2px solid white;
-    color: white;
-    cursor: pointer;
-    border-radius: 20px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
 }
 
-.products-apresentation-img{
-    width: 100%;
-    border-radius: 10px;
+.products-apresentation-img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
 }
-.percussion h4, .strings h4{
-    margin-left: 10%;
-    padding-top: 80px;
+.percussion h4,
+.strings h4 {
+  font-size: 1.3rem;
+  padding-top: 80px;
+  font-weight: bold;
 }
-.percussion-atabaconga-conga, .percussion-djembe-ashico, .percussion-pandeiro, .percussion-pratos-acessorios, .strings-violao, .strings-cavaquinho, .strings-dupla, .strings-guitarra, .strings-banjo{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
-    margin: 30px 0;
+.percussion-atabaconga-conga,
+.percussion-djembe-ashico,
+.percussion-pandeiro,
+.percussion-pratos-acessorios,
+.strings-violao,
+.strings-cavaquinho,
+.strings-dupla,
+.strings-guitarra,
+.strings-banjo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  margin: 30px 0;
 }
-.percussion-atabaconga-conga img, .percussion-djembe-ashico img, .percussion-pandeiro img, .percussion-pratos-acessorios img, .strings-violao img, .strings-cavaquinho img, .strings-dupla img, .strings-guitarra img, .strings-banjo img{
-    background-color: var(--orange);
-    aspect-ratio: 1 / 1;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
+.percussion-atabaconga-conga img,
+.percussion-djembe-ashico img,
+.percussion-pandeiro img,
+.percussion-pratos-acessorios img,
+.strings-violao img,
+.strings-cavaquinho img,
+.strings-dupla img,
+.strings-guitarra img,
+.strings-banjo img {
+  background-color: var(--orange);
+  aspect-ratio: 1 / 1;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  max-width: 350px;
 }
-.percussion-atabaconga-conga img:hover, .percussion-djembe-ashico img:hover, .percussion-pandeiro img:hover, .percussion-pratos-acessorios img:hover, .strings-violao img:hover, .strings-cavaquinho img:hover, .strings-dupla img:hover, .strings-guitarra img:hover, .strings-banjo img:hover{
-    transform: scale(1.1);
-    box-shadow: 0px 0px 2px black;
+.percussion-atabaconga-conga img:hover,
+.percussion-djembe-ashico img:hover,
+.percussion-pandeiro img:hover,
+.percussion-pratos-acessorios img:hover,
+.strings-violao img:hover,
+.strings-cavaquinho img:hover,
+.strings-dupla img:hover,
+.strings-guitarra img:hover,
+.strings-banjo img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 2px black;
 }
-

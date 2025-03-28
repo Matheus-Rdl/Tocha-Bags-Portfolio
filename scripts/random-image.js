@@ -9,7 +9,7 @@ function getRandomInt(min, max) {
 function addRepeatingImages() {
   const pageHeight = document.body.scrollHeight - 150; // Altura total da página
 
-  for (let y = 0; y < pageHeight; y += 200) {
+  for (let y = 0; y < pageHeight; y += 400) {
     const img = document.createElement("img");
     img.src = imageUrl;
     img.classList.add("img-clave");
