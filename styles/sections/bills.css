@@ -53,15 +53,19 @@
     border-radius: 10px;
 } 
 .bills-budget div{
-    border: 5px solid var(--yellow);
-    background-color:rgba(255, 215, 93, 0.3);
+    background-color: var(--yellow);
+    rotate: -3deg;
+    box-shadow: -3px 3px;
 }
+
 .bills-deadlines div{
-    border: 5px solid var(--green);
-    background-color:rgba(160, 203, 96, 0.5);
+    background-color: var(--green-box);
+    box-shadow: 3px 3px;
+    rotate: 5deg;
 }
 .bills-send div{
-    border: 5px solid var(--orange);
-    background-color:rgba(218, 141, 0, 0.4);
+    background-color: var(--orange);
+    rotate: -2deg;
+    box-shadow: 3px 3px;
 }
 

@@ -97,50 +97,51 @@
     align-items: center;
     gap: 50px;
   }
-  .bags-extern-img, .bags-intern-img{
+  .bags-extern-img,
+  .bags-intern-img {
     width: 120%;
     margin-left: -10%;
-}
-.bags-extern-img{
-}
+  }
+  .bags-extern-img {
+  }
 
-.bags-intern-img{
+  .bags-intern-img {
     margin-top: 30px;
     margin-right: 0;
-}
+  }
 
-.bags-extern-p1 {
-  margin: 20% 5% 0 0;
-  width: 150px;
-  top: 0;
-  right: 0;
-}
+  .bags-extern-p1 {
+    margin: 18% 5% 0 0;
+    width: 150px;
+    top: 0;
+    right: 0;
+  }
 
-.bags-extern-p2 {
-  margin: 3% 0 0 48.5%;
-  top: 0;
-  width: 100px;
-}
+  .bags-extern-p2 {
+    margin: 0 0 0 48.5%;
+    top: 0;
+    width: 100px;
+  }
 
-.bags-extern-p3 {
-  width: 100px;
-  margin: 0 0 5% 30%;
-  left: 0;
-  bottom: 0;
-}
+  .bags-extern-p3 {
+    width: 100px;
+    margin: 0 0 5% 30%;
+    left: 0;
+    bottom: 0;
+  }
 
-.bags-intern-p1 {
+  .bags-intern-p1 {
     width: 150px;
     margin: 15% -5% 0 0;
     right: 0;
     top: 0;
-}
+  }
 
-.bags-intern-p2 {
+  .bags-intern-p2 {
     width: 150px;
     margin: 0 0 10% 35%;
     bottom: 0;
-}
+  }
   .percussion-atabaconga-conga,
   .percussion-djembe-ashico,
   .percussion-pandeiro,
@@ -380,6 +381,11 @@
 }
 
 @media (max-width: 500px) {
+
+  #menu-toggle {
+    width: 50px;
+    height: 50px;
+}
   .bills-budget,
   .bills-send,
   .bills-deadlines {

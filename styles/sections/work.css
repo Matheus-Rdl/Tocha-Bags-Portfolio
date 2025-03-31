@@ -53,6 +53,17 @@
     background-color: #F2F2F2;
     transition: 0.5s;
 }
+
+#work-img:nth-child(1):not(.div2-work img), #work-img:nth-child(2):not(.div1-work img){
+    background-color: var(--yellow);
+}
+
+#work-img:nth-child(2){
+    background-color: var(--green);
+}
+#work-img:nth-child(1){
+    background-color: var(--brown-box);
+}
 #work-img:hover{
     width: 165px;
     height: 165px;
