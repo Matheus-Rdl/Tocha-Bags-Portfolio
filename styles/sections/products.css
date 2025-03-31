@@ -173,39 +173,39 @@
   max-width: 350px;
 }
 
-.percussion-atabaconga-conga img:nth-child(3n+1),
-.percussion-djembe-ashico img:nth-child(3n+1),
-.percussion-pandeiro img:nth-child(3n+1),
-.percussion-pratos-acessorios img:nth-child(3n+1),
-.strings-violao img:nth-child(3n+1),
-.strings-cavaquinho img:nth-child(3n+1),
-.strings-dupla img:nth-child(3n+1),
-.strings-guitarra img:nth-child(3n+1),
-.strings-banjo img:nth-child(3n+1){
+.percussion-atabaconga-conga img:nth-child(3n + 1),
+.percussion-djembe-ashico img:nth-child(3n + 1),
+.percussion-pandeiro img:nth-child(3n + 1),
+.percussion-pratos-acessorios img:nth-child(3n + 1),
+.strings-violao img:nth-child(3n + 1),
+.strings-cavaquinho img:nth-child(3n + 1),
+.strings-dupla img:nth-child(3n + 1),
+.strings-guitarra img:nth-child(3n + 1),
+.strings-banjo img:nth-child(3n + 1) {
   background-color: var(--orange);
 }
 
-.percussion-atabaconga-conga img:nth-child(3n+2),
-.percussion-djembe-ashico img:nth-child(3n+2),
-.percussion-pandeiro img:nth-child(3n+2),
-.percussion-pratos-acessorios img:nth-child(3n+2),
-.strings-violao img:nth-child(3n+2),
-.strings-cavaquinho img:nth-child(3n+2),
-.strings-dupla img:nth-child(3n+2),
-.strings-guitarra img:nth-child(3n+2),
-.strings-banjo img:nth-child(3n+2){
+.percussion-atabaconga-conga img:nth-child(3n + 2),
+.percussion-djembe-ashico img:nth-child(3n + 2),
+.percussion-pandeiro img:nth-child(3n + 2),
+.percussion-pratos-acessorios img:nth-child(3n + 2),
+.strings-violao img:nth-child(3n + 2),
+.strings-cavaquinho img:nth-child(3n + 2),
+.strings-dupla img:nth-child(3n + 2),
+.strings-guitarra img:nth-child(3n + 2),
+.strings-banjo img:nth-child(3n + 2) {
   background-color: var(--green);
 }
 
-.percussion-atabaconga-conga img:nth-child(3n+3),
-.percussion-djembe-ashico img:nth-child(3n+3),
-.percussion-pandeiro img:nth-child(3n+3),
-.percussion-pratos-acessorios img:nth-child(3n+3),
-.strings-violao img:nth-child(3n+3),
-.strings-cavaquinho img:nth-child(3n+3),
-.strings-dupla img:nth-child(3n+3),
-.strings-guitarra img:nth-child(3n+3),
-.strings-banjo img:nth-child(3n+3){
+.percussion-atabaconga-conga img:nth-child(3n + 3),
+.percussion-djembe-ashico img:nth-child(3n + 3),
+.percussion-pandeiro img:nth-child(3n + 3),
+.percussion-pratos-acessorios img:nth-child(3n + 3),
+.strings-violao img:nth-child(3n + 3),
+.strings-cavaquinho img:nth-child(3n + 3),
+.strings-dupla img:nth-child(3n + 3),
+.strings-guitarra img:nth-child(3n + 3),
+.strings-banjo img:nth-child(3n + 3) {
   background-color: var(--brown-box);
 }
 .percussion-atabaconga-conga img:hover,

@@ -93,7 +93,7 @@
 }
 
 .fabric-title {
-    font-weight: bold;
+  font-weight: bold;
   border: 3px solid;
   border-radius: 30px;
   box-shadow: var(--green) 0px 10px;
@@ -155,16 +155,16 @@
 }
 
 .bags-intern-p1 {
-    width: 150px;
-    margin: 25% -30% 0 0;
-    right: 0;
-    top: 0;
+  width: 150px;
+  margin: 25% -30% 0 0;
+  right: 0;
+  top: 0;
 }
 
 .bags-intern-p2 {
-    width: 150px;
-    margin: 0 0 10% 55%;
-    bottom: 0;
+  width: 150px;
+  margin: 0 0 10% 55%;
+  bottom: 0;
 }
 
 /* ==================== MATERIAS ==================== */

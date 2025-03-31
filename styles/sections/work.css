@@ -1,71 +1,69 @@
-
-.work-content{
-    display: flex;
+.work-content {
+  display: flex;
 }
 
-
-.work-text p{
-    margin-bottom: 16px;
+.work-text p {
+  margin-bottom: 16px;
 }
-.work-text{
-    width: 50%;
-    margin: 0 5%;
+.work-text {
+  width: 50%;
+  margin: 0 5%;
 }
-.work-text strong{
-    font-weight: 600;
+.work-text strong {
+  font-weight: 600;
 }
-.work-container-img{
-    display: flex;
-    width: 50%;
-    align-items: center;
+.work-container-img {
+  display: flex;
+  width: 50%;
+  align-items: center;
 }
-.work-imgs{
-    width: auto;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-}
-
-.div1-work{
-    display: flex;
-    gap: 30px;
-    justify-content: flex-start;
-    z-index: -1;
+.work-imgs {
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 
-.div2-work{
-    display: flex;
-    gap: 30px;
-    justify-content: flex-start;
-    margin-left: 100px;
-    z-index: -1;
+.div1-work {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-start;
+  z-index: -1;
 }
 
-#work-img{
-    width: 150px;
-    height: 150px; 
-    object-fit: cover;
-    border-radius: 150px;
-    border-style: solid;
-    border-color: #000000;
-    border-width: 2px;
-    background-color: #F2F2F2;
-    transition: 0.5s;
+.div2-work {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-start;
+  margin-left: 100px;
+  z-index: -1;
 }
 
-#work-img:nth-child(1):not(.div2-work img), #work-img:nth-child(2):not(.div1-work img){
-    background-color: var(--yellow);
+#work-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 150px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px;
+  background-color: #f2f2f2;
+  transition: 0.5s;
 }
 
-#work-img:nth-child(2){
-    background-color: var(--green);
-}
-#work-img:nth-child(1){
-    background-color: var(--brown-box);
-}
-#work-img:hover{
-    width: 165px;
-    height: 165px;
+#work-img:nth-child(1):not(.div2-work img),
+#work-img:nth-child(2):not(.div1-work img) {
+  background-color: var(--yellow);
 }
 
+#work-img:nth-child(2) {
+  background-color: var(--green);
+}
+#work-img:nth-child(1) {
+  background-color: var(--brown-box);
+}
+#work-img:hover {
+  width: 165px;
+  height: 165px;
+}

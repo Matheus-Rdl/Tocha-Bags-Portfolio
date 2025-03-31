@@ -1,26 +1,26 @@
-@import 'apresentation.css';
-@import 'work.css';
-@import 'bags.css';
-@import 'products.css';
-@import 'bills.css';
-@import 'contacts.css';
+@import "apresentation.css";
+@import "work.css";
+@import "bags.css";
+@import "products.css";
+@import "bills.css";
+@import "contacts.css";
 
-section:not(#menu){
-    padding: 0 10%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+section:not(#menu) {
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-section:not(.principal section, #menu){
-    margin-bottom: 50px;
-    padding-top: 80px;
+section:not(.principal section, #menu) {
+  margin-bottom: 50px;
+  padding-top: 80px;
 }
 
-section .principal .bags{
-    padding: 0;
+section .principal .bags {
+  padding: 0;
 }
 
-section .products{
-    margin: 0 -10%;
+section .products {
+  margin: 0 -10%;
 }

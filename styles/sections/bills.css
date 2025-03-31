@@ -1,71 +1,71 @@
-.bills-content{
-    gap: 8%;
-    margin: 0 10%;
-    display: flex;
-    align-items: flex-start;
+.bills-content {
+  gap: 8%;
+  margin: 0 10%;
+  display: flex;
+  align-items: flex-start;
 }
 
-.bills-content h3{
-    font-size: 1.2rem;
-    padding: 10px 0px;
-    font-weight: bold;
+.bills-content h3 {
+  font-size: 1.2rem;
+  padding: 10px 0px;
+  font-weight: bold;
 }
-.bills-content strong{
-    font-weight: 600;
-}
-
-.bills img{
-    width: 80%;
-    margin: 0 auto;
-    max-width: 300px;
-    min-width: 100px;
-    object-fit: cover;
-    transition: 1s;
-}
-.bills img:hover{
-    opacity: 0.6;
+.bills-content strong {
+  font-weight: 600;
 }
 
-.bills-content div:not(.bills-content div div){
-    width: 28%;
-
+.bills img {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 300px;
+  min-width: 100px;
+  object-fit: cover;
+  transition: 1s;
+}
+.bills img:hover {
+  opacity: 0.6;
 }
 
-.bills-budget{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}  
-.bills-deadlines{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} 
-.bills-send{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} 
-
-.bills-budget div, .bills-deadlines div, .bills-send div{
-    padding: 0 15px 15px 15px;
-    margin-top: 15px;
-    border-radius: 10px;
-} 
-.bills-budget div{
-    background-color: var(--yellow);
-    rotate: -3deg;
-    box-shadow: -3px 3px;
+.bills-content div:not(.bills-content div div) {
+  width: 28%;
 }
 
-.bills-deadlines div{
-    background-color: var(--green-box);
-    box-shadow: 3px 3px;
-    rotate: 5deg;
+.bills-budget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.bills-send div{
-    background-color: var(--orange);
-    rotate: -2deg;
-    box-shadow: 3px 3px;
+.bills-deadlines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bills-send {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.bills-budget div,
+.bills-deadlines div,
+.bills-send div {
+  padding: 0 15px 15px 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.bills-budget div {
+  background-color: var(--yellow);
+  rotate: -3deg;
+  box-shadow: -3px 3px;
+}
+
+.bills-deadlines div {
+  background-color: var(--green-box);
+  box-shadow: 3px 3px;
+  rotate: 5deg;
+}
+.bills-send div {
+  background-color: var(--orange);
+  rotate: -2deg;
+  box-shadow: 3px 3px;
+}

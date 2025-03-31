@@ -1,32 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @font-face {
-    font-family: 'AnkeCalligraphic';
-    src: url(../../fonts/AnkeCalligraphicFG.woff2) format('woff2'),
-         url(../../fonts/AnkeCalligraphicFG.woff) format('woff'),
-         url(../../fonts/AnkeCalligraphic.ttf) format('ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "AnkeCalligraphic";
+  src: url(../../fonts/AnkeCalligraphicFG.woff2) format("woff2"),
+    url(../../fonts/AnkeCalligraphicFG.woff) format("woff"),
+    url(../../fonts/AnkeCalligraphic.ttf) format("ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
-:root{
-    --background-header: #c3c3c3;
-    --yellow: #ffca2c;
-    --brown: #563e3c;
-    --brown-box: #585353;
-    --brown2: #64201b;
-    --white:  #F2F2F2;
-    --gray: #dddddd;  
-    --green: #5c9f43;
-    --green-box:#7fb44d;
-    --black: #000000;
-    --orange: #fbab18;
-    --orange2: #e7b11e;
+:root {
+  --background-header: #c3c3c3;
+  --yellow: #ffca2c;
+  --brown: #563e3c;
+  --brown-box: #585353;
+  --brown2: #64201b;
+  --white: #f2f2f2;
+  --gray: #dddddd;
+  --green: #5c9f43;
+  --green-box: #7fb44d;
+  --black: #000000;
+  --orange: #fbab18;
+  --orange2: #e7b11e;
 
-    --font-style: "AnkeCalligraphic", sans-serif;
-    --font-text: "Montserrat", sans-serif;
-    --font-nav: 1rem;
+  --font-style: "AnkeCalligraphic", sans-serif;
+  --font-text: "Montserrat", sans-serif;
+  --font-nav: 1rem;
 
-    --rotate-footer-background: -70deg;
+  --rotate-footer-background: -70deg;
 }
