@@ -5,7 +5,6 @@ body {
   background-color: var(--white);
   position: absolute;
   z-index: -2;
-  overflow-x: hidden;
 }
 
 .img-clave {

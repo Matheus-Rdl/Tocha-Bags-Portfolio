@@ -378,6 +378,12 @@
   }
 }
 
+@media (max-width: 550px) {
+  .bags-title div:nth-child(1), .bags-title div:nth-child(2), .instruments-title div:nth-child(1), .instruments-title div:nth-child(2)   {
+    padding: 30px 60%;
+  }
+}
+
 @media (max-width: 500px) {
   #menu-toggle {
     width: 50px;
