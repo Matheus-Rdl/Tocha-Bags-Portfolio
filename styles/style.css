@@ -378,6 +378,38 @@
   }
 }
 
+@media (max-height: 600px){
+  @media (orientation: portrait){
+    .modal-content-img {
+      width: 100%;
+      flex-direction: row;
+      gap: 5%;
+    }
+  }
+
+  @media (orientation: landscape){
+    .modal-content {
+      width: 95%;
+      display: flex;
+    }
+
+    .modal-content-img {
+      width: 100%;
+      flex-direction: row;
+      gap: 5%;
+    }
+
+    .modal-content-other-imgs {
+      flex-direction: column;
+      width: 30%;
+    }
+
+    .modal-content-other-imgs img {
+      width: 100%;
+    }
+  }
+}
+
 @media (max-width: 550px) {
   .bags-title div:nth-child(1),
   .bags-title div:nth-child(2),
