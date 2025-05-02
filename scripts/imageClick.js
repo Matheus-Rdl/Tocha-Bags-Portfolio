@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Show modal with animation
+    document.body.style.overflow = 'hidden';
     modal.style.display = "flex";
     setTimeout(() => {
       modal.style.opacity = 1;
@@ -51,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function closeModal() {
     modal.style.opacity = 0;
+    document.body.style.overflow = 'auto';
     setTimeout(() => {
       modal.style.display = "none";
     }, 200);
