@@ -1,3 +1,8 @@
+.temp{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .instruments-title {
   transform: rotate(1deg);
   position: relative;

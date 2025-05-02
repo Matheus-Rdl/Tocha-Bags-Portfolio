@@ -20,11 +20,13 @@ const db = getFirestore(app);
 
 
 // Get reference to the HTML container where images will be displayed
-const cavaquinhosContainer = document.getElementById('productCavaquinho');
+const cavaquinhoContainer = document.getElementById('productCavaquinho');
 const banjoContainer = document.getElementById('productBanjo');
+const guitarraContainer = document.getElementById('productGuitarra');
 
 // Initialize the loading process when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', loadCavaquinhos);
+document.addEventListener('DOMContentLoaded', loadGuitarra);
 document.addEventListener('DOMContentLoaded', loadBanjo);
 
 /**
@@ -34,7 +36,7 @@ document.addEventListener('DOMContentLoaded', loadBanjo);
 async function loadCavaquinhos() {
   try {
     // Clear container before loading new images to avoid duplicates
-    cavaquinhosContainer.innerHTML = '';
+    cavaquinhoContainer.innerHTML = '';
 
     // Get all documents from the 'products' collection
     const productsSnapshot = await getDocs(collection(db, "products"));
@@ -52,16 +54,40 @@ async function loadCavaquinhos() {
         // Check if images array exists and has at least one image
         if (data.images && data.images.length > 0) {
           // Add the first image to the container
-          addImageToContainer(data.images[0], data.title, data.description, data.images, data.type);
+          addImageToContainer(data.images[0], data.title, data.description, data.images, data.type, data.color);
         }
       });
     }
   } catch (error) {
     // Error handling: log to console and show user-friendly message
     console.error("Erro ao carregar cavaquinhos:", error);
-    cavaquinhosContainer.innerHTML = '<p>Erro ao carregar as imagens. Por favor recarregar a página.</p>';
+    cavaquinhoContainer.innerHTML = '<p>Erro ao carregar as imagens. Por favor recarregar a página.</p>';
   }
 }
+
+async function loadGuitarra() {
+    try {
+      //guitarraContainer.innerHTML = '';
+  
+      const productsSnapshot = await getDocs(collection(db, "products"));
+
+      for (const productDoc of productsSnapshot.docs) {
+        const guitarraSnapshot = await getDocs(
+          collection(db, "products", productDoc.id, "guitarra")
+        );
+        
+        guitarraSnapshot.forEach((doc) => {
+          const data = doc.data();
+          if (data.images && data.images.length > 0) {
+            addImageToContainer(data.images[0], data.title, data.description, data.images, data.type, data.color);
+          }
+        });
+      }
+    } catch (error) {
+      console.error("Erro ao carregar guitarras:", error);
+      guitarraContainer.innerHTML = '<p>Erro ao carregar as imagens. Por favor recarregar a página.</p>';
+    }
+  }
 
 async function loadBanjo() {
     try {
@@ -82,7 +108,7 @@ async function loadBanjo() {
         }
     } catch (error){
         console.error("Erro ao carregar banjos: ", error);
-        cavaquinhosContainer.innerHTML = '<p>Erro ao carregar as imagens. Por favor recarregar a página.</p>';
+        banjoContainer.innerHTML = '<p>Erro ao carregar as imagens. Por favor recarregar a página.</p>';
     }
 }
 
@@ -107,6 +133,8 @@ function addImageToContainer(imageUrl, title, description, otherImages, type, co
   // Add CSS class for styling
   img.classList.add('thumbnail');
 
+  img.style.backgroundColor = imgBackgroundColor(color);
+
   // Add click handler that will work with our modal
   img.addEventListener('click', function() {
     // This will be handled by our modal system
@@ -122,10 +150,43 @@ function addImageToContainer(imageUrl, title, description, otherImages, type, co
 
   // Append image to the container
   if (type == "cavaquinho") {
-      cavaquinhosContainer.appendChild(img);
+      cavaquinhoContainer.appendChild(img);
   }
     else if (type == "banjo") {
       banjoContainer.appendChild(img);
+  } else if (type == "guitarra") {
+    guitarraContainer.appendChild(img)
   }
 
+}
+
+function imgBackgroundColor(color){
+    let imgColor = color;
+    
+    switch (color) {
+        case 'yellow':
+            imgColor = ' #FBAB18';
+            break;
+        case 'green':
+            imgColor = ' #5C9F43';
+            break;
+        case 'brown':
+            imgColor = ' #B66032';
+            break;
+        case 'light-brown':
+            imgColor = ' #818274';
+            break;
+        case 'dark-blue':
+            imgColor = ' #87CEFA';
+            break;
+        case 'light-blue':
+            imgColor = ' #818274';
+            break;
+        case 'gray':
+            imgColor = ' #5C9F43';
+            break;    
+        default:
+            imgColor = color;    
+    }
+    return (imgColor);
 }
