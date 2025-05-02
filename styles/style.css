@@ -334,7 +334,7 @@
   .modal-content{
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 75px;
   }
 
   .modal-content span p{
@@ -361,10 +361,6 @@
     height: 125px;
     bottom: 0;
     margin-top: 15px;
-  }
-
-  .modal-content-other-imgs img:hover {
-    transform: scale(1.1);
   }
 
   .modal-content-img{
@@ -517,4 +513,13 @@
     background-color: var(--background-header);
     transition: 0.2s;
   }
+
+  .modal-content-img{
+    width: 100%;
+  }
+
+  .modal-content-other-imgs {
+    max-width: 85%;
+  }
+
 }
