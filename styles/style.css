@@ -140,15 +140,7 @@
     margin: 0 0 10% 35%;
     bottom: 0;
   }
-  .percussion-atabaconga-conga,
-  .percussion-djembe-ashico,
-  .percussion-pandeiro,
-  .percussion-pratos-acessorios,
-  .strings-violao,
-  .strings-cavaquinho,
-  .strings-dupla,
-  .strings-guitarra,
-  .strings-banjo {
+  .products-div{
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -365,15 +357,7 @@
     width: 100%;
   }
 
-  .percussion-atabaconga-conga,
-  .percussion-djembe-ashico,
-  .percussion-pandeiro,
-  .percussion-pratos-acessorios,
-  .strings-violao,
-  .strings-cavaquinho,
-  .strings-dupla,
-  .strings-guitarra,
-  .strings-banjo {
+  .products-div{
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -404,6 +388,7 @@
       width: 25%;
     }
 
+    
     .modal-content-other-imgs img {
       width: 100%;
     }

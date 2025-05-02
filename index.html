@@ -287,14 +287,17 @@
                   <img id="modalImg" alt="Imagem Principal" />
                 </div>
                 <div id="modalOtherImgs" class="modal-content-other-imgs">
-                  <!--<img class="modal-imgs" src="assets/header/img1.png" alt="Imagem 1" />
-                  <img class="modal-imgs" src="assets/header/img2.png" alt="Imagem 2" />
-                  <img class="modal-imgs" src="assets/header/img3.png" alt="Imagem 3" />-->
+                  <!--
+                    <img class="modal-imgs" src="assets/header/img1.png" alt="Imagem 1" />
+                    <img class="modal-imgs" src="assets/header/img2.png" alt="Imagem 2" />
+                    <img class="modal-imgs" src="assets/header/img3.png" alt="Imagem 3" />
+                    <img class="modal-imgs" src="http://127.0.0.1:5502/assets/header/teste%20200px%20-%20height/TEST1-200px.png" alt="Imagem 3" /> 
+                -->
                 </div>
               </div>
               <span>
-                <h3>Título do produto</h3>
-                <p>
+                <h3 id="modalTitle">Título do produto</h3>
+                <p id="modalDescription">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Debitis odit accusantium facilis assumenda aliquam? Iste quam
                   inventore eveniet cum, voluptatem maxime dolor magnam
@@ -317,7 +320,7 @@
               alt="Foto de homem tocando tambor"
             />
             <h4 id="atabaconga-conga">Atabaconga / Conga</h4>
-            <div class="percussion-atabaconga-conga">
+            <div class="products-div">
               <img src="assets/header/teste q/TEST1.png" alt="" class="thumbnail" />
               <img src="assets/header/teste q/TEST2.png" alt="" class="thumbnail" />
               <img src="assets/header/teste q/TEST3.png" alt="" class="thumbnail" />
@@ -326,7 +329,7 @@
             </div>
 
             <h4 id="djembe-ashico">Djembe / Ashico</h4>
-            <div class="percussion-djembe-ashico">
+            <div class="products-div">
               <img src="assets/header/teste 200px - height/TEST1-200px.png" alt="" class="thumbnail" />
               <img src="assets/header/teste 200px - height/TEST1-300px.png" alt="" class="thumbnail" />
               <img src="assets/header/teste 200px - height/TEST1-350px.png" alt="" class="thumbnail" />
@@ -335,7 +338,7 @@
             </div>
 
             <h4 id="pandeiro">Pandeiro</h4>
-            <div class="percussion-pandeiro">
+            <div class="products-div">
               <img src="assets/header/img1.png" alt="" class="thumbnail" />
               <img src="assets/header/img2.png" alt="" class="thumbnail" />
               <img src="assets/header/img3.png" alt="" class="thumbnail" />
@@ -343,7 +346,7 @@
             </div>
 
             <h4 id="pratos-acessorios">Pratos / Acessórios</h4>
-            <div class="percussion-pratos-acessorios">
+            <div class="products-div">
               <img src="assets/header/img1.png" alt="" class="thumbnail" />
               <img src="assets/header/img2.png" alt="" class="thumbnail" />
               <img src="assets/header/img2.png" alt="" class="thumbnail" />
@@ -365,7 +368,7 @@
               alt="Foto de homem tocando violão"
             />
             <h4 id="violao">Violão</h4>
-            <div class="strings-violao">
+            <div class="products-div">
               <img src="assets/header/img1.png" alt="" class="thumbnail" />
               <img src="assets/header/img2.png" alt="" class="thumbnail" />
               <img src="assets/header/img3.png" alt="" class="thumbnail" />
@@ -375,17 +378,11 @@
             </div>
 
             <h4 id="cavaquinho">Cavaquinho</h4>
-            <div class="strings-cavaquinho">
-              <img src="assets/header/img1.png" alt="" class="thumbnail" />
-              <img src="assets/header/img1.png" alt="" class="thumbnail" />
-              <img src="assets/header/img2.png" alt="" class="thumbnail" />
-              <img src="assets/header/img3.png" alt="" class="thumbnail" />
-              <img src="assets/header/img3.png" alt="" class="thumbnail" />
-              <img src="assets/header/img4.png" alt="" class="thumbnail" />
+            <div class="products-div" id="productCavaquinho">
             </div>
 
             <h4 id="dupla">Dupla</h4>
-            <div class="strings-dupla">
+            <div class="products-div">
               <img src="assets/header/img1.png" alt="" class="thumbnail" />
               <img src="assets/header/img2.png" alt="" class="thumbnail" />
               <img src="assets/header/img3.png" alt="" class="thumbnail" />
@@ -393,7 +390,7 @@
             </div>
 
             <h4 id="guitarra">Guitarra</h4>
-            <div class="strings-guitarra">
+            <div class="products-div">
               <img src="assets/header/img1.png" alt="" class="thumbnail" />
               <img src="assets/header/img1.png" alt="" class="thumbnail" />
               <img src="assets/header/img2.png" alt="" class="thumbnail" />
@@ -403,13 +400,7 @@
             </div>
 
             <h4 id="banjo">Banjo</h4>
-            <div class="strings-banjo">
-              <img src="assets/header/img1.png" alt="" class="thumbnail" />
-              <img src="assets/header/img2.png" alt="" class="thumbnail" />
-              <img src="assets/header/img3.png" alt="" class="thumbnail" />
-              <img src="assets/header/img4.png" alt="" class="thumbnail" />
-              <img src="assets/header/img4.png" alt="" class="thumbnail" />
-              <img src="assets/header/img4.png" alt="" class="thumbnail" />
+            <div class="products-div" id="productBanjo">
             </div>
           </section>
         </section>
@@ -542,11 +533,11 @@
       </div>
     </footer>
 
+    <script type="module" src="scripts/app.js"></script>
     <script src="scripts/header.js"></script>
     <script src="scripts/button-menu.js"></script>
     <script src="scripts/menu-nav.js"></script>
     <script src="scripts/scroll-nav.js"></script>
-    <script src="scripts/image-click.js"></script>
-    <script src="scripts/change-product-img.js"></script>
+    <script src="scripts/imageClick.js"></script>
   </body>
 </html>

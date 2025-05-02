@@ -15,13 +15,10 @@ function changeImage(thumbnail) {
   let tempSrc = mainImg.src;
 
   mainImg.style.opacity = "0.5";
-  thumbnail.style.opacity = "0.5";
 
   setTimeout(() => {
     mainImg.src = thumbnail.src;
-    thumbnail.src = tempSrc;
     mainImg.style.opacity = "1";
-    thumbnail.style.opacity = "1";
     isPaused = false;
   }, 200);
 }
