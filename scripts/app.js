@@ -20,12 +20,14 @@ const db = getFirestore(app);
 
 
 // Get reference to the HTML container where images will be displayed
+const violaoContainer = document.getElementById('productViolao');
 const cavaquinhoContainer = document.getElementById('productCavaquinho');
 const guitarraContainer = document.getElementById('productGuitarra');
 const banjoContainer = document.getElementById('productBanjo');
 const bandolimContainer = document.getElementById('productBandolim');
 
 // Initialize the loading process when DOM is fully loaded
+document.addEventListener('DOMContentLoaded', loadViolao);
 document.addEventListener('DOMContentLoaded', loadCavaquinhos);
 document.addEventListener('DOMContentLoaded', loadGuitarra);
 document.addEventListener('DOMContentLoaded', loadBanjo);
@@ -35,6 +37,37 @@ document.addEventListener('DOMContentLoaded', loadBandolim);
  * Main function to load cavaquinho images from Firestore
  * Handles the complete data fetching and rendering process
  */
+async function loadViolao() {
+  try {
+    // Clear container before loading new images to avoid duplicates
+    violaoContainer.innerHTML = '';
+
+    // Get all documents from the 'products' collection
+    const productsSnapshot = await getDocs(collection(db, "products"));
+
+    // Process each product document to find nested cavaquinho subcollections
+    for (const productDoc of productsSnapshot.docs) {
+      // Get all documents from the 'cavaquinho' subcollection of each product
+      const violaoSnapshot = await getDocs(
+        collection(db, "products", productDoc.id, "violao")
+      );
+      
+      // Process each cavaquinho document found
+      violaoSnapshot.forEach((doc) => {
+        const data = doc.data();
+        // Check if images array exists and has at least one image
+        if (data.images && data.images.length > 0) {
+          // Add the first image to the container
+          addImageToContainer(data.images[0], data.title, data.description, data.images, data.type, data.color);
+        }
+      });
+    }
+  } catch (error) {
+    // Error handling: log to console and show user-friendly message
+    console.error("Erro ao carregar violões:", error);
+    cavaquinhoContainer.innerHTML = '<p>Erro ao carregar as imagens. Por favor recarregar a página.</p>';
+  }
+}
 async function loadCavaquinhos() {
   try {
     // Clear container before loading new images to avoid duplicates
@@ -174,9 +207,12 @@ function addImageToContainer(imageUrl, title, description, otherImages, type, co
   });
 
   // Append image to the container
-  if (type == "cavaquinho") {
-    cavaquinhoContainer.appendChild(img);
+  if (type == "violao") {
+    violaoContainer.appendChild(img)
   }
+  else if (type == "cavaquinho") {
+    cavaquinhoContainer.appendChild(img);
+  } 
   else if (type == "guitarra") {
     guitarraContainer.appendChild(img)
   } 
