@@ -21,13 +21,15 @@ const db = getFirestore(app);
 
 // Get reference to the HTML container where images will be displayed
 const cavaquinhoContainer = document.getElementById('productCavaquinho');
-const banjoContainer = document.getElementById('productBanjo');
 const guitarraContainer = document.getElementById('productGuitarra');
+const banjoContainer = document.getElementById('productBanjo');
+const bandolimContainer = document.getElementById('productBandolim');
 
 // Initialize the loading process when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', loadCavaquinhos);
 document.addEventListener('DOMContentLoaded', loadGuitarra);
 document.addEventListener('DOMContentLoaded', loadBanjo);
+document.addEventListener('DOMContentLoaded', loadBandolim);
 
 /**
  * Main function to load cavaquinho images from Firestore
@@ -112,6 +114,29 @@ async function loadBanjo() {
     }
 }
 
+async function loadBandolim() {
+  try {
+      bandolimContainer.innerHTML = '';
+
+      const productsSnapshot = await getDocs(collection(db, "products"));
+
+      for (const productDoc of productsSnapshot.docs){
+          const bandolimSnapshot = await getDocs(collection(db, "products", productDoc.id, "bandolim"));
+
+          bandolimSnapshot.forEach((doc) => {
+              const data = doc.data();
+
+              if (data.images && data.images.length > 0){
+                  addImageToContainer(data.images[0], data.title, data.description, data.images, data.type, data.color);
+              }
+          });
+      }
+  } catch (error){
+      console.error("Erro ao carregar bandolins: ", error);
+      bandolimContainer.innerHTML = '<p>Erro ao carregar as imagens. Por favor recarregar a página.</p>';
+  }
+}
+
 /**
  * Helper function to create and append an image element to the container
  * @param {string} imageUrl - URL of the image to display
@@ -150,12 +175,16 @@ function addImageToContainer(imageUrl, title, description, otherImages, type, co
 
   // Append image to the container
   if (type == "cavaquinho") {
-      cavaquinhoContainer.appendChild(img);
+    cavaquinhoContainer.appendChild(img);
   }
-    else if (type == "banjo") {
-      banjoContainer.appendChild(img);
-  } else if (type == "guitarra") {
+  else if (type == "guitarra") {
     guitarraContainer.appendChild(img)
+  } 
+  else if (type == "banjo") {
+    banjoContainer.appendChild(img);
+  } 
+  else if (type == "bandolim"){
+    bandolimContainer.appendChild(img);
   }
 
 }
